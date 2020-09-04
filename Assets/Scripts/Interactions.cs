@@ -47,6 +47,7 @@ public class Interactions : MonoBehaviour
 
     private void Update()
     {
+        //test
         if(GameObject.Find("nrObjToFind") != null)
         {
             GameObject.Find("nrObjToFind").GetComponent<TextMeshProUGUI>().text = numberOfObjectsToFind.ToString();
