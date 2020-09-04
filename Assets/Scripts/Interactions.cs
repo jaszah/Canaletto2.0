@@ -22,20 +22,24 @@ public class Interactions : MonoBehaviour
     public Camera GameCamera;
     private GameObject jstckFx;
     public Material selectedMat;
-    private int numberOfObjectsToFind;
+    private int numberOfObjectsToFind; 
     private int lostHearts = 0;
     public GameObject mistake1;
     public GameObject mistake2;
     public GameObject mistake3;
     public static int allPlayableScenes = 5;
+    public GameObject objectsToFindText;
 
     void Start()
     {
         jstckFx = GameObject.Find("JoystickFIxed"); //mobile joystick
+
         GameObject.Find("ClickButton").GetComponent<Tester>().GetNewMessage();
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
+
         numberOfObjectsToFind = GameObject.FindGameObjectsWithTag("ObjecToFind").Length;
         GameObject.Find("nrObjToFind").GetComponent<TextMeshProUGUI>().text = numberOfObjectsToFind.ToString();
+
         mistake1 = GameObject.Find("Mistake1");
         mistake2 = GameObject.Find("Mistake2");
         mistake3 = GameObject.Find("Mistake3");
@@ -43,17 +47,17 @@ public class Interactions : MonoBehaviour
 
     private void Update()
     {
-        numberOfObjectsToFind = GameObject.FindGameObjectsWithTag("ObjecToFind").Length;
-        GameObject.Find("nrObjToFind").GetComponent<TextMeshProUGUI>().text = numberOfObjectsToFind.ToString();
+        if(GameObject.Find("nrObjToFind") != null)
+        {
+            GameObject.Find("nrObjToFind").GetComponent<TextMeshProUGUI>().text = numberOfObjectsToFind.ToString();
+        }
+
+
         if (numberOfObjectsToFind == 0)
         {
             NextButton.CompletedSceneIndex = SceneManager.GetActiveScene().buildIndex;
             NextSceneTransition();
         }
-        //if (triggered == false)
-        //{
-           // FastClosingWindow();
-        //}
     }
 
 
@@ -68,6 +72,7 @@ public class Interactions : MonoBehaviour
             else
             {
                 ClosingWindow();
+                numberOfObjectsToFind--;
             }
         }
         else
@@ -124,6 +129,7 @@ public class Interactions : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         triggered = false;
+        triggeredObject = null;
         GameCamera.GetComponent<ProCamera2D>().OffsetX = 0;
         camOffset = 0f;
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
@@ -154,16 +160,8 @@ public class Interactions : MonoBehaviour
         openWindow = false;
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
         jstckFx.SetActive(true);
-        LeanTween.alpha(triggeredObject, 0f, 1f);
-        Destroy(triggeredObject, 1.1f);
+        LeanTween.alpha(triggeredObject, 0f, 2f);
+        Destroy(triggeredObject, 2f);
         GameObject.Find("RestOfIcon").GetComponent<BouncingIcon>().Bouncing();
-    }
-
-    void FastClosingWindow()
-    {
-        GameCamera.GetComponent<ProCamera2D>().OffsetX = 0;
-        openWindow = false;
-        GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
-        jstckFx.SetActive(true);
     }
 }
