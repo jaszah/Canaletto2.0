@@ -56,7 +56,7 @@ public class Interactions : MonoBehaviour
 
         if (numberOfObjectsToFind == 0)
         {
-            NextButton.CompletedSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            Buttons.CompletedGameSceneIndex = SceneManager.GetActiveScene().buildIndex;
             NextSceneTransition();
         }
     }
@@ -138,7 +138,7 @@ public class Interactions : MonoBehaviour
 
     private void NextSceneTransition()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     void OpeningWindow()
