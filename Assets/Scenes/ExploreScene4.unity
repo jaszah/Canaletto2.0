@@ -2074,7 +2074,7 @@ GameObject:
   - component: {fileID: 1080030281}
   m_Layer: 0
   m_Name: ObjectMask01
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

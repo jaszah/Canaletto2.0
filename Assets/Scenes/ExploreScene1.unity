@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 75967974}
   m_Layer: 0
   m_Name: ObjectMask07
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 335816051}
   m_Layer: 0
   m_Name: ObjectMask09
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 452927054}
   m_Layer: 0
   m_Name: ObjectMask11
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1233,7 +1233,7 @@ GameObject:
   - component: {fileID: 484322513}
   m_Layer: 0
   m_Name: ObjectMask08
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1359,7 +1359,7 @@ GameObject:
   - component: {fileID: 530314068}
   m_Layer: 0
   m_Name: ObjectMask06
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2436,7 +2436,7 @@ GameObject:
   - component: {fileID: 779650464}
   m_Layer: 0
   m_Name: ObjectMask10
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2564,7 +2564,7 @@ GameObject:
   - component: {fileID: 799887169}
   m_Layer: 0
   m_Name: ObjectMask03
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2691,7 +2691,7 @@ GameObject:
   - component: {fileID: 846995594}
   m_Layer: 0
   m_Name: ObjectMask12
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2817,7 +2817,7 @@ GameObject:
   - component: {fileID: 877081036}
   m_Layer: 0
   m_Name: ObjectMask15
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3091,7 +3091,7 @@ GameObject:
   - component: {fileID: 1011259582}
   m_Layer: 0
   m_Name: ObjectMask04
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,7 +3365,7 @@ GameObject:
   - component: {fileID: 1080030281}
   m_Layer: 0
   m_Name: ObjectMask01
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3872,7 +3872,7 @@ GameObject:
   - component: {fileID: 1193307845}
   m_Layer: 0
   m_Name: ObjectMask16
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4232,7 +4232,7 @@ GameObject:
   - component: {fileID: 1233302302}
   m_Layer: 0
   m_Name: ObjectMask18
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,7 +5072,7 @@ GameObject:
   - component: {fileID: 1535045669}
   m_Layer: 0
   m_Name: ObjectMask14
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5199,7 +5199,7 @@ GameObject:
   - component: {fileID: 1678413527}
   m_Layer: 0
   m_Name: ObjectMask02
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5450,7 +5450,7 @@ GameObject:
   - component: {fileID: 1734427871}
   m_Layer: 0
   m_Name: ObjectMask13
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5700,7 +5700,7 @@ GameObject:
   - component: {fileID: 1939616841}
   m_Layer: 0
   m_Name: ObjectMask19
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6068,7 +6068,7 @@ GameObject:
   - component: {fileID: 2018878911}
   m_Layer: 0
   m_Name: ObjectMask17
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6300,7 +6300,7 @@ GameObject:
   - component: {fileID: 2114398597}
   m_Layer: 0
   m_Name: ObjectMask05
-  m_TagString: Untagged
+  m_TagString: ObjecToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

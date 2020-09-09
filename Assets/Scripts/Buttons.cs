@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
     public static int CompletedExplorationSceneIndex = 0;
 
     public static int FirstGameSceneIndex = 2;
-    public static int FirstExplorationSceneIndex = 6;
+    public static int FirstExplorationSceneIndex = 8;
 
     private int EndScene = 7;
 
@@ -15,17 +15,29 @@ public class Buttons : MonoBehaviour
 
     public void NextGameScene()
     {
-        if(CompletedGameSceneIndex < Interactions.allPlayableScenes)
+        if (gameMode)
         {
-            Debug.Log("if w nextbutton");
-            CompletedGameSceneIndex ++;
-            Debug.Log("Numer sceny w NextButton(z NextButton)" + CompletedGameSceneIndex);
-            SceneManager.LoadScene(CompletedGameSceneIndex);
+            if (CompletedGameSceneIndex < Interactions.allPlayableScenes)
+            {
+                CompletedGameSceneIndex++;
+                SceneManager.LoadScene(CompletedGameSceneIndex);
+            }
+            else
+            {
+                SceneManager.LoadScene(EndScene);
+            }
         }
         else
         {
-            CompletedGameSceneIndex ++;
-            SceneManager.LoadScene(EndScene);
+            if ((CompletedExplorationSceneIndex - 6) < Interactions.allPlayableScenes)
+            {
+                CompletedExplorationSceneIndex++;
+                SceneManager.LoadScene(CompletedExplorationSceneIndex);
+            }
+            else
+            {
+                SceneManager.LoadScene(EndScene);
+            }
         }
     
     }

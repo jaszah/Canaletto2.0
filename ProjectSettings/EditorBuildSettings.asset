@@ -29,4 +29,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 0239ce32b717ffc4ea30318698071a50
+  - enabled: 1
+    path: Assets/Scenes/ExploreScene1.unity
+    guid: c3882c275c67846469ca0780a7fc4bb8
+  - enabled: 1
+    path: Assets/Scenes/ExploreScene2.unity
+    guid: 552df523c69916a4b9126ede1edba9ed
+  - enabled: 1
+    path: Assets/Scenes/ExploreScene3.unity
+    guid: 981dbc4014578ab4a877beb08cc5966a
+  - enabled: 1
+    path: Assets/Scenes/ExploreScene4.unity
+    guid: fb110a6d4601f7542ac4dcaddaa87c72
+  - enabled: 1
+    path: Assets/Scenes/ExploreScene5.unity
+    guid: f7f407a4cfe65d6479ce8a4b47e52b0c
   m_configObjects: {}
