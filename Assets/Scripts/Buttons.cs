@@ -42,6 +42,11 @@ public class Buttons : MonoBehaviour
         StartGameScene();
     }
 
+    public void Test()
+    {
+        Debug.Log("test");
+    }
+
     private void StartGameScene()
     {
         if (gameMode)

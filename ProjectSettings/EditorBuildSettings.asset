@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ChooseGameMode.unity
+    path: Assets/Scenes/SetGameMode.unity
     guid: 17b6628b77cf16749b85b15c9c6e8a23
   - enabled: 1
     path: Assets/Scenes/TransitionScene.unity

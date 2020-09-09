@@ -7,6 +7,7 @@ public class PanZoom : MonoBehaviour
     Vector3 touchStart;
     public float zoomOutMin = 1;
     public float zoomOutMax = 8;
+    public float multiply;
 
     // Update is called once per frame
     void Update()
@@ -40,6 +41,6 @@ public class PanZoom : MonoBehaviour
 
     void zoom(float increment)
     {
-        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
+        Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - (increment * multiply), zoomOutMin, zoomOutMax);
     }
 }
