@@ -1950,6 +1950,7 @@ GameObject:
   - component: {fileID: 581320801}
   - component: {fileID: 581320800}
   - component: {fileID: 581320799}
+  - component: {fileID: 581320802}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1964,18 +1965,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 581320798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcc2924c2e06bea47a833fc979674554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 30
-  zoomOutMax: 150
-  multiply: 100
-  rightLimit: 100
-  leftLimit: 100
-  bottomLimit: 100
-  topLimit: 100
 --- !u!114 &581320800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,6 +1996,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &581320802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581320798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52503e5ee9f34ee439c6e4385ff02e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomOutMin: 1
+  zoomOutMax: 15
+  ImageXsize: 8429
+  ImageYsize: 6630
+  PixelsPerUnit: 10
+  screenRatio: 0
+  screenRatioInv: 0
+  screenXsize: 0
+  screenYsize: 0
+  ZoomValue: 0
+  multiply: 30
 --- !u!1 &673566939
 GameObject:
   m_ObjectHideFlags: 0
@@ -5902,7 +5919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952083027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.3, y: -45.1, z: -351}
+  m_LocalPosition: {x: 0, y: 0, z: -351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -1296,12 +1296,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 581320798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcc2924c2e06bea47a833fc979674554, type: 3}
+  m_Script: {fileID: 11500000, guid: 52503e5ee9f34ee439c6e4385ff02e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 30
-  zoomOutMax: 150
-  multiply: 100
+  zoomOutMin: 1
+  zoomOutMax: 15
+  ImageXsize: 8715
+  ImageYsize: 6890
+  PixelsPerUnit: 10
+  screenRatio: 0
+  screenRatioInv: 0
+  screenXsize: 0
+  screenYsize: 0
+  ZoomValue: 0
+  multiply: 0
 --- !u!114 &581320800
 MonoBehaviour:
   m_ObjectHideFlags: 0
