@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PanZoom : MonoBehaviour
 {
@@ -9,14 +7,19 @@ public class PanZoom : MonoBehaviour
     public float zoomOutMax = 8;
     public float multiply;
 
-    // Update is called once per frame
+    public float rightLimit;
+    public float leftLimit;
+    public float bottomLimit;
+    public float topLimit;
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))//touch check
         {
             touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
-        if (Input.touchCount == 2)
+
+        if (Input.touchCount == 2)//double touch check(pinching)
         {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
@@ -36,7 +39,15 @@ public class PanZoom : MonoBehaviour
             Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Camera.main.transform.position += direction;
         }
+
         zoom(Input.GetAxis("Mouse ScrollWheel"));
+
+        Camera.main.transform.position = new Vector3
+                (
+                    Mathf.Clamp(Camera.main.transform.position.x, leftLimit, rightLimit),
+                    Mathf.Clamp(Camera.main.transform.position.y, bottomLimit, topLimit),
+                    Camera.main.transform.position.z
+                );
     }
 
     void zoom(float increment)
