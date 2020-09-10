@@ -13,7 +13,8 @@ public class ExplorationMode : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		this.gameObject.SetActive(false);
+		//this.gameObject.SetActive(false);
+		this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
 		objectsCount--;
 
 		if (objectsCount == 0)
