@@ -7,7 +7,7 @@ public class ExplorationMode : MonoBehaviour
 	public static int objectsCount = 19;
 	public GameObject blend;
 	public GameObject masks;
-	public GameObject button;
+	//public GameObject button;
 
 	private static string objectName;
 
@@ -39,13 +39,13 @@ public class ExplorationMode : MonoBehaviour
 		SceneManager.LoadScene(1);
 	}
 
-	private void PrintText()
-	{
-		//tutaj wstawić tekst
-		button.SetActive(true);
-	}
+    private void PrintText()
+    {
+        //tutaj wstawić tekst
+        //button.SetActive(true);
+    }
 
-	public static void SetVisible(string name)
+    public static void SetVisible(string name)
 	{
 		GameObject.Find(name).gameObject.GetComponent<SpriteMask>().isCustomRangeActive = true;
 	}
