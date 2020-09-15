@@ -7,6 +7,12 @@ public class MovementSwitch : MonoBehaviour
 	private bool joystickMove;
 	private bool tapMove;
 
+	private void Start()
+	{
+		joystickMove = true;
+		tapMove = false;
+	}
+
 	public void SwitchToJoystick()
 	{
 		this.GetComponent<PointOfInterestMove>().enabled = true;
@@ -29,12 +35,18 @@ public class MovementSwitch : MonoBehaviour
 
 	public void TurnOffTap()
 	{
-		this.GetComponent<TapMove>().enabled = false;
-		Debug.Log("Off");
+		if (tapMove)
+		{
+			this.GetComponent<TapMove>().enabled = false;
+			Debug.Log("Off");
+		}
 	}
 	public void TurnOnTap()
 	{
-		this.GetComponent<TapMove>().enabled = true;
-		Debug.Log("On");
+		if (tapMove)
+		{
+			this.GetComponent<TapMove>().enabled = true;
+			Debug.Log("On");
+		}
 	}
 }

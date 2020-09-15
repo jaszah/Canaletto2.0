@@ -129,6 +129,7 @@ public class Interactions : MonoBehaviour
     {
         triggered = false;
         triggeredObject = null;
+
         GameCamera.GetComponent<ProCamera2D>().OffsetX = 0;
         camOffset = 0f;
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
@@ -161,6 +162,7 @@ public class Interactions : MonoBehaviour
         jstckFx.SetActive(true);
         LeanTween.alpha(triggeredObject, 0f, 2f);
         Destroy(triggeredObject, 2f);
+        triggered = false;
         GameObject.Find("RestOfIcon").GetComponent<BouncingIcon>().Bouncing();
     }
 }
