@@ -8,20 +8,18 @@ public class ExplorationMode : MonoBehaviour
     public bool isClickable;
     public bool maskActive;
     public GameObject modalWindow;
+    public Vector3 skala;
 
     private GameObject objToFind;
     private int sortingOrder;
     private int layerIndex;
     private int goNumber;
-    //private GameObject[] objectsArray;
 
     private void Start()
     {
         layerIndex = LayerMask.NameToLayer("ObjectsToFind");
         isClickable = true;
         maskActive = false;
-
-        //GameObject[] objectsArray = FindGameObjectsInLayer(layerIndex);
     }
 
     private void Update()
@@ -58,6 +56,7 @@ public class ExplorationMode : MonoBehaviour
 
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
                 this.gameObject.GetComponent<Tester>().GetNewMessageExplore(goNumber);
+                OpenModal();
 
                 for (int i = 0; i < objectsArray.Length; i++)
                 {
@@ -71,5 +70,11 @@ public class ExplorationMode : MonoBehaviour
         {
             return;
         }
+    }
+
+    private void OpenModal()
+    {
+        LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 0f, 0f);
+        LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 1f, 2f);
     }
 }
