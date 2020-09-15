@@ -48,7 +48,7 @@ public class Buttons : MonoBehaviour
         StartGameScene();
     }
 
-    public void ExplorationMode()
+    public void ExploMode()
     {
         gameMode = false;
         StartGameScene();
@@ -69,5 +69,23 @@ public class Buttons : MonoBehaviour
         {
             SceneManager.LoadScene(FirstExplorationSceneIndex);
         }
+    }
+
+    public void CloseBlendButton()
+    {
+        GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<ExplorationMode>().maskActive = false;
+
+        GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<SpriteMask>().frontSortingOrder = -1;
+        GameObject.FindGameObjectWithTag("ActiveObject").gameObject.tag = "ObjectToFind";
+        GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+
+        GameObject.Find("ModalWindow").SetActive(false);
+
+        for (int i = 0; i < objectsArray.Length; i++)
+        {
+            objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = true;
+        }
+
+        GameObject.Find("blend").SetActive(false);
     }
 }

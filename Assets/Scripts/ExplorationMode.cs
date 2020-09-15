@@ -33,19 +33,7 @@ public class ExplorationMode : MonoBehaviour
         {
             if (maskActive)
             {
-                maskActive = false;
-                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = -1;
-                this.gameObject.tag = "ObjectToFind";
-                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
-
-                modalWindow.SetActive(false);
-
-                for (int i = 0; i < objectsArray.Length; i++)
-                {
-                    objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = true;
-                }
-
-                blend.SetActive(false);
+                CloseBlend();
             }
             else if (!maskActive)
             {
@@ -76,5 +64,22 @@ public class ExplorationMode : MonoBehaviour
     {
         LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 0f, 0f);
         LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 1f, 2f);
+    }
+
+    public void CloseBlend()
+    {
+        maskActive = false;
+        this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = -1;
+        this.gameObject.tag = "ObjectToFind";
+        GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+
+        modalWindow.SetActive(false);
+
+        for (int i = 0; i < objectsArray.Length; i++)
+        {
+            objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = true;
+        }
+
+        blend.SetActive(false);
     }
 }
