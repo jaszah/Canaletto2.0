@@ -20,7 +20,7 @@ public class Interactions : MonoBehaviour
     public Camera GameCamera;
     private GameObject jstckFx;
     public Material selectedMat;
-    private int numberOfObjectsToFind; 
+    private int numberOfObjectsToFind;
     private int lostHearts = 0;
     public GameObject mistake1;
     public GameObject mistake2;
@@ -46,7 +46,7 @@ public class Interactions : MonoBehaviour
     private void Update()
     {
         //test
-        if(GameObject.Find("nrObjToFind") != null)
+        if (GameObject.Find("nrObjToFind") != null)
         {
             GameObject.Find("nrObjToFind").GetComponent<TextMeshProUGUI>().text = numberOfObjectsToFind.ToString();
         }
@@ -106,14 +106,14 @@ public class Interactions : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        triggered = true; 
+        triggered = true;
         objectnr = collision.GetComponent<ObjectProperties>().objectNumber;
 
         if (triggeredObject == null)
         {
             triggeredObject = collision.gameObject;
         }
-        
+
         if (triggeredObject.transform.position.x >= 0)
         {
             windowOffset = windowLeftOffset;
