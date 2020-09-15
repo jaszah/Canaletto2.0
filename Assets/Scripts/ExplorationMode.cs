@@ -1,60 +1,68 @@
-﻿using System.Collections;
+﻿
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ExplorationMode : MonoBehaviour
 {
-	public static int objectsCount = 19;
-	public GameObject blend;
-	public GameObject masks;
-	//public GameObject button;
+    public GameObject blend;
+    public bool isClickable;
+    public bool maskActive;
 
-	private static string objectName;
+    private int sortingOrder;
+    private int layerIndex;
+    //private GameObject[] objectsArray;
 
-	private void Start()
-	{
-		objectsCount = GameObject.FindGameObjectsWithTag("ObjecToFind").Length;
-	}
-
-	private void OnMouseDown()
-	{
-		this.gameObject.GetComponent<SpriteMask>().isCustomRangeActive = false;
-		blend.SetActive(true);
-
-		objectName = this.gameObject.name;
-
-		PrintText();
-
-		objectsCount--;
-
-		if (objectsCount == 0)
-		{
-			Debug.Log("end game");
-			Buttons.CompletedExplorationSceneIndex = SceneManager.GetActiveScene().buildIndex;
-			NextSceneTransition();
-		}
-	}
-	private void NextSceneTransition()
-	{
-		SceneManager.LoadScene(1);
-	}
-
-    private void PrintText()
+    private void Start()
     {
-        //tutaj wstawić tekst
-        //button.SetActive(true);
+        layerIndex = LayerMask.NameToLayer("ObjectsToFind");
+        isClickable = true;
+        maskActive = false;
+
+        //GameObject[] objectsArray = FindGameObjectsInLayer(layerIndex);
     }
 
-    public static void SetVisible(string name)
-	{
-		GameObject.Find(name).gameObject.GetComponent<SpriteMask>().isCustomRangeActive = true;
-	}
+    private void Update()
+    {
+        sortingOrder = this.gameObject.GetComponent<SpriteMask>().frontSortingOrder;
+    }
 
-	public void OkButton()
-	{
-		masks.SetActive(true);
-		blend.SetActive(false);
+    private void OnMouseDown()
+    {
+        if (isClickable)
+        {
+            if (maskActive)
+            {
+                maskActive = false;
+                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = -1;
+                this.gameObject.tag = "ObjectToFind";
+                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
 
-		GameObject.Find(objectName).GetComponent<SpriteMask>().isCustomRangeActive = true;
-	}
+
+                for (int i = 0; i < objectsArray.Length; i++)
+                {
+                    objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = true;
+                }
+
+                blend.SetActive(false);
+            }
+            else if (!maskActive)
+            {
+                maskActive = true;
+                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
+                this.gameObject.tag = "ActiveObject";
+                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+
+                for (int i = 0; i < objectsArray.Length; i++)
+                {
+                    objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = false;
+                }
+
+                blend.SetActive(true);
+            }
+        }
+        else
+        {
+            return;
+        }
+    }
 }

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -380,7 +380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &50612594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -531,9 +531,11 @@ GameObject:
   - component: {fileID: 75967973}
   - component: {fileID: 75967975}
   - component: {fileID: 75967974}
-  m_Layer: 0
+  - component: {fileID: 75967977}
+  - component: {fileID: 75967976}
+  m_Layer: 9
   m_Name: ObjectMask07
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,8 +617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &75967975
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -650,6 +652,32 @@ PolygonCollider2D:
       - {x: -17.97001, y: -35.094086}
       - {x: 26.965988, y: -34.620617}
       - {x: 27.224888, y: 23.94924}
+--- !u!114 &75967976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75967971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &75967977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75967971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &229782885
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,9 +789,11 @@ GameObject:
   - component: {fileID: 335816050}
   - component: {fileID: 335816052}
   - component: {fileID: 335816051}
-  m_Layer: 0
+  - component: {fileID: 335816054}
+  - component: {fileID: 335816053}
+  m_Layer: 9
   m_Name: ObjectMask09
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -845,8 +875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &335816052
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -878,6 +908,32 @@ PolygonCollider2D:
       - {x: -25.212124, y: -56.97273}
       - {x: 41.218178, y: -58.042236}
       - {x: 42.939373, y: 29.518873}
+--- !u!114 &335816053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335816048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &335816054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335816048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &347734638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,9 +1144,11 @@ GameObject:
   - component: {fileID: 452927053}
   - component: {fileID: 452927055}
   - component: {fileID: 452927054}
-  m_Layer: 0
+  - component: {fileID: 452927057}
+  - component: {fileID: 452927056}
+  m_Layer: 9
   m_Name: ObjectMask11
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1172,8 +1230,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &452927055
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1209,6 +1267,32 @@ PolygonCollider2D:
       - {x: 21.071623, y: -5.651062}
       - {x: 14.909015, y: 41.401672}
       - {x: 10.010132, y: 45.57112}
+--- !u!114 &452927056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452927051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &452927057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452927051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &484322510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,9 +1305,11 @@ GameObject:
   - component: {fileID: 484322512}
   - component: {fileID: 484322514}
   - component: {fileID: 484322513}
-  m_Layer: 0
+  - component: {fileID: 484322516}
+  - component: {fileID: 484322515}
+  m_Layer: 9
   m_Name: ObjectMask08
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,8 +1391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &484322514
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1338,6 +1424,32 @@ PolygonCollider2D:
       - {x: -8.940137, y: -20.247282}
       - {x: 16.448349, y: -20.247295}
       - {x: 17.127224, y: 17.543701}
+--- !u!114 &484322515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484322510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &484322516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484322510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530314065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,9 +1462,11 @@ GameObject:
   - component: {fileID: 530314067}
   - component: {fileID: 530314069}
   - component: {fileID: 530314068}
-  m_Layer: 0
+  - component: {fileID: 530314071}
+  - component: {fileID: 530314070}
+  m_Layer: 9
   m_Name: ObjectMask06
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1433,8 +1547,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &530314069
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1470,6 +1584,32 @@ PolygonCollider2D:
       - {x: 161.27069, y: -76.55167}
       - {x: 159.2706, y: 75.4332}
       - {x: 36.321014, y: 99.42822}
+--- !u!114 &530314070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530314065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &530314071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530314065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &544514663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,7 +1980,6 @@ GameObject:
   - component: {fileID: 555157190}
   - component: {fileID: 555157189}
   - component: {fileID: 555157188}
-  - component: {fileID: 555157192}
   m_Layer: 0
   m_Name: Paint
   m_TagString: Untagged
@@ -1923,18 +2062,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
---- !u!114 &555157192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555157187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef22831bc40ade40b07ef32e20abc5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &581320798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,7 +2072,6 @@ GameObject:
   m_Component:
   - component: {fileID: 581320801}
   - component: {fileID: 581320800}
-  - component: {fileID: 581320799}
   - component: {fileID: 581320802}
   m_Layer: 0
   m_Name: GameManager
@@ -1954,18 +2080,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &581320799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 581320798}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcc2924c2e06bea47a833fc979674554, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &581320800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2464,9 +2578,11 @@ GameObject:
   - component: {fileID: 779650463}
   - component: {fileID: 779650465}
   - component: {fileID: 779650464}
-  m_Layer: 0
+  - component: {fileID: 779650467}
+  - component: {fileID: 779650466}
+  m_Layer: 9
   m_Name: ObjectMask10
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2548,8 +2664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &779650465
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2583,6 +2699,32 @@ PolygonCollider2D:
       - {x: 22.375221, y: -37.43846}
       - {x: 22.381624, y: 36.907715}
       - {x: 15.977688, y: 41.52511}
+--- !u!114 &779650466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779650461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &779650467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779650461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &799887166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,9 +2737,11 @@ GameObject:
   - component: {fileID: 799887168}
   - component: {fileID: 799887170}
   - component: {fileID: 799887169}
-  m_Layer: 0
+  - component: {fileID: 799887172}
+  - component: {fileID: 799887171}
+  m_Layer: 9
   m_Name: ObjectMask03
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2679,8 +2823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &799887170
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2713,6 +2857,32 @@ PolygonCollider2D:
       - {x: -17.728184, y: -41.027306}
       - {x: 17.216866, y: -40.771626}
       - {x: 17.392889, y: 9.7338085}
+--- !u!114 &799887171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799887166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &799887172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799887166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817333845
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,9 +2944,11 @@ GameObject:
   - component: {fileID: 846995593}
   - component: {fileID: 846995595}
   - component: {fileID: 846995594}
-  m_Layer: 0
+  - component: {fileID: 846995597}
+  - component: {fileID: 846995596}
+  m_Layer: 9
   m_Name: ObjectMask12
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2858,8 +3030,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &846995595
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2891,6 +3063,32 @@ PolygonCollider2D:
       - {x: -70.57901, y: -56.954796}
       - {x: 41.380085, y: -56.95479}
       - {x: 71.763596, y: -41.45229}
+--- !u!114 &846995596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846995591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &846995597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846995591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877081033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,9 +3101,11 @@ GameObject:
   - component: {fileID: 877081035}
   - component: {fileID: 877081037}
   - component: {fileID: 877081036}
-  m_Layer: 0
+  - component: {fileID: 877081039}
+  - component: {fileID: 877081038}
+  m_Layer: 9
   m_Name: ObjectMask15
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2987,8 +3187,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &877081037
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3021,6 +3221,32 @@ PolygonCollider2D:
       - {x: 30.54113, y: -26.427788}
       - {x: 29.9477, y: 7.687603}
       - {x: 14.751587, y: 29.794073}
+--- !u!114 &877081038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877081033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &877081039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877081033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &969532036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3180,9 +3406,11 @@ GameObject:
   - component: {fileID: 1011259581}
   - component: {fileID: 1011259583}
   - component: {fileID: 1011259582}
-  m_Layer: 0
+  - component: {fileID: 1011259585}
+  - component: {fileID: 1011259584}
+  m_Layer: 9
   m_Name: ObjectMask04
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3264,8 +3492,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1011259583
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3297,6 +3525,32 @@ PolygonCollider2D:
       - {x: -63.50182, y: -40.068428}
       - {x: 63.246174, y: -39.812775}
       - {x: 63.30562, y: 28.35447}
+--- !u!114 &1011259584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011259579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1011259585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011259579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030944629
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,9 +3711,11 @@ GameObject:
   - component: {fileID: 1080030279}
   - component: {fileID: 1080030282}
   - component: {fileID: 1080030281}
-  m_Layer: 0
+  - component: {fileID: 1080030280}
+  - component: {fileID: 1080030278}
+  m_Layer: 9
   m_Name: ObjectMask01
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3478,6 +3734,20 @@ Transform:
   m_Father: {fileID: 817333846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1080030278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080030276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
 --- !u!331 &1080030279
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3528,6 +3798,18 @@ SpriteMask:
   m_BackSortingOrder: -5
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1080030280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080030276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1080030281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3541,8 +3823,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1080030282
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3967,9 +4249,11 @@ GameObject:
   - component: {fileID: 1193307844}
   - component: {fileID: 1193307846}
   - component: {fileID: 1193307845}
-  m_Layer: 0
+  - component: {fileID: 1193307848}
+  - component: {fileID: 1193307847}
+  m_Layer: 9
   m_Name: ObjectMask16
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4051,8 +4335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1193307846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4084,6 +4368,32 @@ PolygonCollider2D:
       - {x: -11.869064, y: -18.019815}
       - {x: 1.0209017, y: -17.726616}
       - {x: 11.667072, y: -17.847214}
+--- !u!114 &1193307847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193307842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1193307848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193307842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200850688
 GameObject:
   m_ObjectHideFlags: 0
@@ -4330,9 +4640,11 @@ GameObject:
   - component: {fileID: 1233302301}
   - component: {fileID: 1233302303}
   - component: {fileID: 1233302302}
-  m_Layer: 0
+  - component: {fileID: 1233302305}
+  - component: {fileID: 1233302304}
+  m_Layer: 9
   m_Name: ObjectMask18
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4414,8 +4726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1233302303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4450,6 +4762,32 @@ PolygonCollider2D:
       - {x: 143.10257, y: 57.126297}
       - {x: 86.47868, y: 78.93341}
       - {x: -83.52371, y: 77.62251}
+--- !u!114 &1233302304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233302299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1233302305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233302299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264340293
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,9 +5511,11 @@ GameObject:
   - component: {fileID: 1535045668}
   - component: {fileID: 1535045670}
   - component: {fileID: 1535045669}
-  m_Layer: 0
+  - component: {fileID: 1535045672}
+  - component: {fileID: 1535045671}
+  m_Layer: 9
   m_Name: ObjectMask14
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5257,8 +5597,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1535045670
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5291,6 +5631,32 @@ PolygonCollider2D:
       - {x: 39.163445, y: -69.10838}
       - {x: 62.547062, y: -63.986046}
       - {x: 63.145744, y: 69.39639}
+--- !u!114 &1535045671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535045666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1535045672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535045666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1678413524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,9 +5669,11 @@ GameObject:
   - component: {fileID: 1678413526}
   - component: {fileID: 1678413528}
   - component: {fileID: 1678413527}
-  m_Layer: 0
+  - component: {fileID: 1678413530}
+  - component: {fileID: 1678413529}
+  m_Layer: 9
   m_Name: ObjectMask02
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5387,8 +5755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1678413528
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5421,6 +5789,32 @@ PolygonCollider2D:
       - {x: -48.21403, y: -133.76909}
       - {x: 103.28182, y: -64.02281}
       - {x: 103.57317, y: 45.8283}
+--- !u!114 &1678413529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678413524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1678413530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678413524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1686643129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5557,9 +5951,11 @@ GameObject:
   - component: {fileID: 1734427870}
   - component: {fileID: 1734427872}
   - component: {fileID: 1734427871}
-  m_Layer: 0
+  - component: {fileID: 1734427874}
+  - component: {fileID: 1734427873}
+  m_Layer: 9
   m_Name: ObjectMask13
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5641,8 +6037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1734427872
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5674,6 +6070,32 @@ PolygonCollider2D:
       - {x: 5.380109, y: -143.45625}
       - {x: 66.26795, y: -142.8484}
       - {x: 65.62005, y: 144.66743}
+--- !u!114 &1734427873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734427868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1734427874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734427868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1755743636
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,9 +6232,11 @@ GameObject:
   - component: {fileID: 1939616840}
   - component: {fileID: 1939616842}
   - component: {fileID: 1939616841}
-  m_Layer: 0
+  - component: {fileID: 1939616844}
+  - component: {fileID: 1939616843}
+  m_Layer: 9
   m_Name: ObjectMask19
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5894,8 +6318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &1939616842
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5930,6 +6354,32 @@ PolygonCollider2D:
       - {x: 38.804955, y: -182.59317}
       - {x: 114.88744, y: -181.04207}
       - {x: 116.44922, y: 68.617455}
+--- !u!114 &1939616843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939616838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &1939616844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939616838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1952083027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6181,9 +6631,11 @@ GameObject:
   - component: {fileID: 2018878910}
   - component: {fileID: 2018878912}
   - component: {fileID: 2018878911}
-  m_Layer: 0
+  - component: {fileID: 2018878914}
+  - component: {fileID: 2018878913}
+  m_Layer: 9
   m_Name: ObjectMask17
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6265,8 +6717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &2018878912
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6298,6 +6750,32 @@ PolygonCollider2D:
       - {x: 15.289027, y: -20.487392}
       - {x: 27.098255, y: -19.968285}
       - {x: 27.034603, y: 19.966944}
+--- !u!114 &2018878913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018878908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &2018878914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018878908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2105667873
 GameObject:
   m_ObjectHideFlags: 0
@@ -6416,9 +6894,11 @@ GameObject:
   - component: {fileID: 2114398596}
   - component: {fileID: 2114398598}
   - component: {fileID: 2114398597}
-  m_Layer: 0
+  - component: {fileID: 2114398600}
+  - component: {fileID: 2114398599}
+  m_Layer: 9
   m_Name: ObjectMask05
-  m_TagString: ObjecToFind
+  m_TagString: ObjectToFind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6500,8 +6980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blend: {fileID: 50612593}
-  masks: {fileID: 817333845}
-  button: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
 --- !u!60 &2114398598
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6533,6 +7013,32 @@ PolygonCollider2D:
       - {x: 35.554756, y: -25.4309}
       - {x: 36.38247, y: 15.522491}
       - {x: 13.083473, y: 25.635582}
+--- !u!114 &2114398599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114398594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6e1afc08479d94d8b113a19d772628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectNumber: 1
+  CameraOffset: {x: 0, y: 0}
+--- !u!114 &2114398600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114398594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125277753
 GameObject:
   m_ObjectHideFlags: 0
