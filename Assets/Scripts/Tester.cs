@@ -39,4 +39,9 @@ public class Tester : MonoBehaviour
         ModalManager.instance.ShowModal(headers[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
     }
 
+    public void GetNewMessageExplore(int goNumber)
+    {
+        ModalManager.instance.ShowModal(headers[goNumber], messages[goNumber]);
+    }
+
 }

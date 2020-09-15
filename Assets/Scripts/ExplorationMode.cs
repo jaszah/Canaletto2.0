@@ -7,9 +7,12 @@ public class ExplorationMode : MonoBehaviour
     public GameObject blend;
     public bool isClickable;
     public bool maskActive;
+    public GameObject modalWindow;
 
+    private GameObject objToFind;
     private int sortingOrder;
     private int layerIndex;
+    private int goNumber;
     //private GameObject[] objectsArray;
 
     private void Start()
@@ -37,6 +40,7 @@ public class ExplorationMode : MonoBehaviour
                 this.gameObject.tag = "ObjectToFind";
                 GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
 
+                modalWindow.SetActive(false);
 
                 for (int i = 0; i < objectsArray.Length; i++)
                 {
@@ -51,6 +55,9 @@ public class ExplorationMode : MonoBehaviour
                 this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
                 this.gameObject.tag = "ActiveObject";
                 GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+
+                goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
+                this.gameObject.GetComponent<Tester>().GetNewMessageExplore(goNumber);
 
                 for (int i = 0; i < objectsArray.Length; i++)
                 {
