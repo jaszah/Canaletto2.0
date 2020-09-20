@@ -88,4 +88,9 @@ public class Buttons : MonoBehaviour
 
         GameObject.Find("blend").SetActive(false);
     }
+
+    public void StartExScene()
+    {
+        SceneManager.LoadScene(PaintingChange.exSceneName);
+    }
 }

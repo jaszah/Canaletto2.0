@@ -474,7 +474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &50612594
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2163,6 +2163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00e85ccf26f99d9468b9495a9e3debf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blend: {fileID: 0}
+  isClickable: 0
+  maskActive: 0
+  modalWindow: {fileID: 0}
+  skala: {x: 0, y: 0, z: 0}
 --- !u!60 &1080030282
 PolygonCollider2D:
   m_ObjectHideFlags: 0
