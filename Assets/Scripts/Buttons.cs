@@ -7,7 +7,7 @@ public class Buttons : MonoBehaviour
     public static int CompletedExplorationSceneIndex = 0;
 
     public static int FirstGameSceneIndex = 2;
-    public static int FirstExplorationSceneIndex = 8;
+    public static int FirstExplorationSceneIndex = 13;
 
     private int EndScene = 7;
 

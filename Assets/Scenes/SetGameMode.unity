@@ -1546,7 +1546,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 661029094}
-        m_MethodName: ExplorationMode
+        m_MethodName: ExploMode
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

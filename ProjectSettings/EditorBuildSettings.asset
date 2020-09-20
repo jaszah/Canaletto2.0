@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExploreScene5.unity
     guid: f7f407a4cfe65d6479ce8a4b47e52b0c
+  - enabled: 1
+    path: Assets/Scenes/ListaObrazow.unity
+    guid: 99797069ca5eb354799893ee11ba138c
   m_configObjects: {}
