@@ -33,10 +33,12 @@ public class ExplorationMode : MonoBehaviour
         {
             if (maskActive)
             {
+                MPanZoom.isOn = true;
                 CloseBlend();
             }
             else if (!maskActive)
             {
+                MPanZoom.isOn = false;
                 maskActive = true;
                 this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
                 this.gameObject.tag = "ActiveObject";

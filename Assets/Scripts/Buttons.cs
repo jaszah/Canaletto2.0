@@ -54,12 +54,7 @@ public class Buttons : MonoBehaviour
         StartGameScene();
     }
 
-    public void Test()
-    {
-        Debug.Log("test");
-    }
-
-    private void StartGameScene()
+    public void StartGameScene()
     {
         if (gameMode)
         {
@@ -92,5 +87,10 @@ public class Buttons : MonoBehaviour
     public void StartExScene()
     {
         SceneManager.LoadScene(PaintingChange.exSceneName);
+    }
+
+    public void SetGameMode()
+    {
+        SceneManager.LoadScene(0);
     }
 }

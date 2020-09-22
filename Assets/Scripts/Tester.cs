@@ -34,6 +34,29 @@ public class Tester : MonoBehaviour
         "Pierwszy kiosk „Ruchu” otwarto 1919 na dawnym dworcu kolei warszawsko-wiedeńskiej;"
     };
 
+    private string[] exHeaders =
+    {
+        "Kościół św. Krzyża",
+        "Kościół św. Krzyża",
+        "Kamienica Księży Misjonarzy",
+        "Brama Szkoły Rycerskiej",
+        "nop",
+        "nop",
+        "Targ",
+    };
+
+    private string[] exMessages =
+    {
+        "Pierwszy kościół ble ble ble",
+        "Pierwszy kościół św. Krzyża stanął w roku 1525. W roku 1653 przekazany on został Zgromadzeniu Księży Misjonarzy. Podczas potopu szwedzkiego, w roku 1656, został on splądrowany i spalony. Jego odbudowa trwała 16 lat (od roku 1679 do 1696). Projektantem kościoła w stylu barokowym był nadworny architekt królewski, Włoch Józef Szymon Bellotti. W kolejnych latach trwały prace nad rozbudową kościoła. Najpierw wzniesiono dwie wieże które zaprojektował Antoni Fontanna. Pierwszą, w latach 1726 – 1730, wzniesiono wieżę po prawej stronie kościoła. Druga po stronie lewej zbudowana została w latach od 1753 - 1754. W roku 1756 na prawej wieży umieszczono zegar oraz cztery dzwony i sygnaturkę. W tym samym roku zakończono też prace nad fasadą kościoła, która została ozdobiona rzeźbami. Pracami nad fasadą kościoła kierował syn Antoniego Fontany – Jakub. Przed kościołem znajdował się wybrukowany podjazd dla powozów, pozwalający podjechać „ważnym wiernym”, z obu stron, pod same drzwi kościoła. W dni powszednie podjazd zamykany był łańcuchem. Na szczycie podjazdu zbudowano galerię z ciosanych kamieni. Zwieńczeniem galerii stanowiły rzeźby czterech ewangelistów oraz dziesięć kamiennych wazonów. W roku 1818 podjazd został zlikwidowany, galeria natomiast została przesunięta w stronę kościoła, zniknęły wówczas wazony i ewangeliści. Co ciekawe to właśnie od tego kościoła wzięła swoją nazwę jedna z ważniejszych ulic Warszawy, leżąca nieopodal, ulica Świętokrzyska.",
+        "Kamienica Księży Misjonarzy jako jednopiętrowy, murowany dom został wybudowany przed 1740 rokiem. Posiadał mansardowy, łamany dach, asymetryczną facjatkę nakrytą trójkątnym przyczółkiem. W 1701 roku, po ucieczce z więzienia wiedeńskiego, znalazł tutaj schronienie Franciszek II Rakoczy, książę Węgier i Siedmiogrodu, przywódca powstania węgierskiego 1703-1711.  W połowie XIX wieku kamienica została rozbudowana i posiadała 14-osiowy trakt. Na początku XX wieku została podwyższona o trzecie piętro.",
+        "Brama zaprojektowana przez Jana Zygmunta Deybla i Joachima Daniela Jaucha, którą około 1732 polecił zbudować August II Mocny. Była ona zwieńczona charakterystycznym wielkim blaszanym globem.  W roku malowania obrazu (1778) brama prowadziła do założonej przez króla, Stanisława Augusta Poniatowskiego, Szkoły Rycerskiej. Powstała ona w roku 1765. Jej zadaniem było  przygotowywanie młodzieży do służby wojskowej i cywilnych zadań publicznych. Idea przyświecająca jej powstaniu to „edukacja społeczeństwa poprzez edukację jednostki”. W 1816 na terenach Szkoły Rycerskiej, powołany został na mocy dekretu imperatora Aleksandra I - Królewski Uniwersytet Warszawski. W roku 1823 bramę Augusta Mocnego zastąpiła skromniejsza brama, położona nie na linii ulicy lecz bardziej cofnięta w głąb terenu uniwersyteckiego.",
+        "nop",
+        "nop",
+        "Naprzeciw kościoła św. Krzyża znajdował się targ, na którym sprzedawano przede wszystkim żywność z lichych kramów, a nawet niskich stołów. Zazwyczaj targowano tu nielegalnie. Jedynie raz do roku w dniu 3 maja targ miał charakter oficjalny albowiem był dniem tzw. odpustu. Kościół św. Krzyża obchodził wówczas święto na pamiątkę  dnia 3 maja 326 roku czyli dnia 'odnalezienia' w Jerozolimie Krzyża Świętego przez św. Helenę (matkę cesarza  Konstantyna)."
+
+    };
+
     public void GetNewMessage()
     {
         ModalManager.instance.ShowModal(headers[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
@@ -41,7 +64,7 @@ public class Tester : MonoBehaviour
 
     public void GetNewMessageExplore(int goNumber)
     {
-        ModalManager.instance.ShowModal(headers[goNumber], messages[goNumber]);
+        ModalManager.instance.ShowModal(exHeaders[goNumber], exMessages[goNumber]);
     }
 
 }

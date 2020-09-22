@@ -22,7 +22,7 @@ public class ModalManager : MonoBehaviour
         this.header.text = header;
         this.body.text = body;
         modalWindow.SetActive(true);
-        //LeanTween.alpha(modalWindow.GetComponent<RectTransform>(), 0f, 0f);
+        LeanTween.alpha(modalWindow.GetComponent<RectTransform>(), 0f, 0f);
     }
 
     public void HideModal()
