@@ -82,6 +82,7 @@ public class Buttons : MonoBehaviour
         }
 
         GameObject.Find("blend").SetActive(false);
+        MPanZoom.isOn = true;
     }
 
     public void StartExScene()
