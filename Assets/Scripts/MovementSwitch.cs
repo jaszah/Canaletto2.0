@@ -4,49 +4,24 @@ using UnityEngine;
 
 public class MovementSwitch : MonoBehaviour
 {
-	private bool joystickMove;
-	private bool tapMove;
-
-	private void Start()
-	{
-		joystickMove = true;
-		tapMove = false;
-	}
-
 	public void SwitchToJoystick()
 	{
 		this.GetComponent<PointOfInterestMove>().enabled = true;
-		this.GetComponent<TapMove>().enabled = false;
+		this.GetComponent<MPanZoom>().enabled = false;
 
-		joystickMove = true; //włączyć kod na tym obiekcie
-		tapMove = false; //wyłączyć kod na tym obiekcie
+		//a tu powłączać jeśli były wyłączone
+
 		Debug.Log("joystick");
 	}
 
-	public void SwitchToTap()
+	public void SwitchToZoom()
 	{
 		this.GetComponent<PointOfInterestMove>().enabled = false;
-		this.GetComponent<TapMove>().enabled = true;
+		this.GetComponent<MPanZoom>().enabled = true;
 
-		joystickMove = false; //to samo co wyżej
-		tapMove = true;//to samo co wyżej
-		Debug.Log("tap");
+		//trzeba powyłączać POIa, joysticka i przycisk po prawej
+
+		Debug.Log("zoom");
 	}
 
-	public void TurnOffTap()
-	{
-		if (tapMove)
-		{
-			this.GetComponent<TapMove>().enabled = false;
-			Debug.Log("Off");
-		}
-	}
-	public void TurnOnTap()
-	{
-		if (tapMove)
-		{
-			this.GetComponent<TapMove>().enabled = true;
-			Debug.Log("On");
-		}
-	}
 }
