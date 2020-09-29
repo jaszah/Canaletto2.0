@@ -64,7 +64,7 @@ public class MPanZoom : MonoBehaviour
 
                 float difference = currentMagnitude - prevMagnitude;
 
-                zoom(difference * 0.01f);
+                zoom(difference * 0.5f);
             }
             else if (Input.GetMouseButton(0))
             {
