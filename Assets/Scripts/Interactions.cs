@@ -83,17 +83,14 @@ public class Interactions : MonoBehaviour
                 {
                     case 0:
                         mistake1.GetComponent<Animator>().SetBool("IsOn", false);
-                        Destroy(mistake1, 2.5f);
                         lostHearts++;
                         break;
                     case 1:
                         mistake2.GetComponent<Animator>().SetBool("IsOn", false);
-                        Destroy(mistake2, 2.5f);
                         lostHearts++;
                         break;
                     case 2:
                         mistake3.GetComponent<Animator>().SetBool("IsOn", false);
-                        Destroy(mistake3, 2.5f);
                         lostHearts++;
                         break;
                 }

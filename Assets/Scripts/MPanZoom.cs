@@ -82,14 +82,4 @@ public class MPanZoom : MonoBehaviour
     {
         Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax);
     }
-
-    public void On()
-    {
-        isOn = true;
-    }
-
-    public void Off()
-    {
-        isOn = false;
-    }
 }

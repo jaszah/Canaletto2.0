@@ -164,7 +164,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 16.148}
-  m_SizeDelta: {x: 800, y: 765.04}
+  m_SizeDelta: {x: 800, y: 673.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37338056
 MonoBehaviour:
@@ -704,7 +704,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1247,7 +1247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -652.54}
+  m_AnchoredPosition: {x: 400, y: -560.74}
   m_SizeDelta: {x: 400, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316927335
@@ -2487,7 +2487,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1041325029}
-        m_MethodName: SwitchToZoom
+        m_MethodName: SwitchToTap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3141,12 +3141,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1041325029}
+          m_MethodName: TurnOffTap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041325030}
-          m_MethodName: On
+        - m_Target: {fileID: 1041325029}
+          m_MethodName: TurnOnTap
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3815,12 +3830,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1041325025}
-  - component: {fileID: 1041325026}
-  - component: {fileID: 1041325027}
-  - component: {fileID: 1041325028}
   - component: {fileID: 1041325024}
-  - component: {fileID: 1041325029}
+  - component: {fileID: 1041325028}
+  - component: {fileID: 1041325027}
+  - component: {fileID: 1041325026}
   - component: {fileID: 1041325030}
+  - component: {fileID: 1041325029}
   m_Layer: 0
   m_Name: PointOfInterest
   m_TagString: Player
@@ -3926,7 +3941,7 @@ MonoBehaviour:
   openWindow: 0
   GameCamera: {fileID: 1952083029}
   selectedMat: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
-  mistake1: {fileID: 0}
+  mistake1: {fileID: 1771832465}
   mistake2: {fileID: 1559738105}
   mistake3: {fileID: 114809273}
   objectsToFindText: {fileID: 704697405}
@@ -3951,20 +3966,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1041325023}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52503e5ee9f34ee439c6e4385ff02e25, type: 3}
+  m_Script: {fileID: 11500000, guid: 827fbe5ed8607ac4f90d2e09bd1f9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 1
-  zoomOutMax: 15
-  ImageXsize: 8429
-  ImageYsize: 6630
-  PixelsPerUnit: 10
-  screenRatio: 0
-  screenRatioInv: 0
-  screenXsize: 0
-  screenYsize: 0
-  ZoomValue: 0
-  multiply: 30
 --- !u!1 &1059413975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,12 +5309,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1041325030}
-          m_MethodName: On
+        - m_Target: {fileID: 1041325029}
+          m_MethodName: TurnOffTap
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5320,12 +5320,12 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
+  - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1041325030}
-          m_MethodName: Off
+        - m_Target: {fileID: 1041325029}
+          m_MethodName: TurnOnTap
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5461,8 +5461,8 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 1041325030}
-          m_MethodName: Off
+        - m_Target: {fileID: 1041325029}
+          m_MethodName: TurnOffTap
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6055,7 +6055,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6454,7 +6454,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6983a7b8f1105434cbbb9410a8d48bab, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -6523,7 +6523,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
