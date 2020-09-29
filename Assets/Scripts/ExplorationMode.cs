@@ -4,36 +4,66 @@ using UnityEngine.SceneManagement;
 
 public class ExplorationMode : MonoBehaviour
 {
+    private const float DOUBLE_CLICK_TIME = .2f;
+
     public GameObject blend;
     public bool isClickable;
     public bool maskActive;
     public GameObject modalWindow;
     public Vector3 skala;
+    public static bool isDoubleClick;
 
     private GameObject objToFind;
-    private int sortingOrder;
     private int layerIndex;
     private int goNumber;
+    private float lastClickTime;
+    private float timeSinceLastClick;
 
     private void Start()
     {
         layerIndex = LayerMask.NameToLayer("ObjectsToFind");
         isClickable = true;
         maskActive = false;
+        isDoubleClick = false;
     }
 
     private void Update()
     {
-        sortingOrder = this.gameObject.GetComponent<SpriteMask>().frontSortingOrder;
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Debug.Log("normal");
+        //    timeSinceLastClick = Time.time - lastClickTime;
+
+        //    if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
+        //    {
+        //        isDoubleClick = true;
+        //        Debug.Log("double");
+        //    }
+
+        //    lastClickTime = Time.time;
+        //}
     }
 
     private void OnMouseDown()
     {
-        if (isClickable)
+        if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("normal");
+            timeSinceLastClick = Time.time - lastClickTime;
+
+            if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
+            {
+                isDoubleClick = true;
+                Debug.Log("double");
+            }
+
+            lastClickTime = Time.time;
+        }
+        if (isClickable && isDoubleClick)
+        {
+            Debug.Log("double: " + isDoubleClick);
             if (maskActive)
             {
-                MPanZoom.isOn = true;
                 CloseBlend();
             }
             else if (!maskActive)
@@ -55,10 +85,6 @@ public class ExplorationMode : MonoBehaviour
 
                 blend.SetActive(true);
             }
-        }
-        else
-        {
-            return;
         }
     }
 
@@ -83,5 +109,7 @@ public class ExplorationMode : MonoBehaviour
         }
 
         blend.SetActive(false);
+        MPanZoom.isOn = true;
+        isDoubleClick = false;
     }
 }

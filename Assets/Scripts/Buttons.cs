@@ -69,6 +69,7 @@ public class Buttons : MonoBehaviour
     public void CloseBlendButton()
     {
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<ExplorationMode>().maskActive = false;
+        ExplorationMode.isDoubleClick = false;
 
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<SpriteMask>().frontSortingOrder = -1;
         GameObject.FindGameObjectWithTag("ActiveObject").gameObject.tag = "ObjectToFind";
@@ -83,6 +84,7 @@ public class Buttons : MonoBehaviour
 
         GameObject.Find("blend").SetActive(false);
         MPanZoom.isOn = true;
+
     }
 
     public void StartExScene()
