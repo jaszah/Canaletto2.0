@@ -27,23 +27,6 @@ public class ExplorationMode : MonoBehaviour
         isDoubleClick = false;
     }
 
-    private void Update()
-    {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Debug.Log("normal");
-        //    timeSinceLastClick = Time.time - lastClickTime;
-
-        //    if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
-        //    {
-        //        isDoubleClick = true;
-        //        Debug.Log("double");
-        //    }
-
-        //    lastClickTime = Time.time;
-        //}
-    }
-
     private void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
