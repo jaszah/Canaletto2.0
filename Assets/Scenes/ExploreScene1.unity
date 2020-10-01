@@ -338,6 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 9
   CameraOffset: {x: -0.5, y: 0}
+  zoom: 0
 --- !u!61 &48505362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -555,7 +556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -423.25912}
+  m_AnchoredPosition: {x: 302.94666, y: -352.95023}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74238352
@@ -793,6 +794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 7
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &75967977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 9
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &335816054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,6 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 7
   CameraOffset: {x: -0.5, y: 0}
+  zoom: 0
 --- !u!61 &375572686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1382,8 +1386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.680298}
-  m_SizeDelta: {x: 800, y: 500}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 605.8933, y: 442.95023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414659923
 MonoBehaviour:
@@ -1398,7 +1402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalFit: 1
-  m_VerticalFit: 0
+  m_VerticalFit: 1
 --- !u!114 &414659924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,6 +1616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 11
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &452927057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1773,6 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 8
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &484322516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,6 +1944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 6
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &530314071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,6 +2055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 3
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &544514667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3131,6 +3139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 10
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &779650467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3293,6 +3302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 3
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &799887172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3508,6 +3518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 12
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &846995597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3668,6 +3679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 15
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &877081039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3980,6 +3992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 4
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1011259585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4188,7 +4201,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 1
-  CameraOffset: {x: 0, y: 0}
+  CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!331 &1080030279
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4404,6 +4418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 10
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &1137491108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4528,6 +4543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 1
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &1148989641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4652,6 +4668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 6
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &1185938543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4825,6 +4842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 16
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1193307848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5225,6 +5243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 18
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1233302305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5415,6 +5434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 5
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!1 &1283084036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,8 +5542,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -100.520004}
-  m_SizeDelta: {x: 700, y: 51.04}
+  m_AnchoredPosition: {x: 302.94666, y: -100.520004}
+  m_SizeDelta: {x: 505.86353, y: 51.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1298329492
 CanvasRenderer:
@@ -5580,8 +5600,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45.68
-  m_fontSizeBase: 45.68
+  m_fontSize: 38
+  m_fontSizeBase: 38
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5742,6 +5762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 8
   CameraOffset: {x: -0.5, y: 0}
+  zoom: 0
 --- !u!61 &1301802489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5981,6 +6002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 11
   CameraOffset: {x: -0.5, y: 0}
+  zoom: 0
 --- !u!61 &1399811676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6371,6 +6393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 14
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1535045672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6420,8 +6443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -267.14957}
-  m_SizeDelta: {x: 692.3098, y: 248.61914}
+  m_AnchoredPosition: {x: 302.94666, y: -231.99512}
+  m_SizeDelta: {x: 505.8933, y: 178.31024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590780719
 MonoBehaviour:
@@ -6651,6 +6674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 2
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1678413530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,6 +6785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 4
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &1686643133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6935,6 +6960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 13
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1734427874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6994,6 +7020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 2
   CameraOffset: {x: 0.5, y: 0}
+  zoom: 0
 --- !u!61 &1755743639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7224,6 +7251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 0
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &1939616844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7248,6 +7276,8 @@ GameObject:
   - component: {fileID: 1952083029}
   - component: {fileID: 1952083031}
   - component: {fileID: 1952083036}
+  - component: {fileID: 1952083028}
+  - component: {fileID: 1952083032}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7255,6 +7285,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1952083028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952083027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8c96e2cdc154e848a3d9fe62464d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraTargets: []
+  CenterTargetOnStart: 0
+  Axis: 0
+  UpdateType: 0
+  FollowHorizontal: 1
+  HorizontalFollowSmoothness: 0.15
+  FollowVertical: 1
+  VerticalFollowSmoothness: 0.15
+  OffsetX: 0
+  OffsetY: 0
+  IsRelativeOffset: 1
+  ZoomWithFOV: 0
+  IgnoreTimeScale: 0
+  CurrentZoomTriggerID: 0
+  IsCameraPositionLeftBounded: 0
+  IsCameraPositionRightBounded: 0
+  IsCameraPositionTopBounded: 0
+  IsCameraPositionBottomBounded: 0
+  GameCamera: {fileID: 1952083029}
 --- !u!20 &1952083029
 Camera:
   m_ObjectHideFlags: 0
@@ -7343,6 +7404,40 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1952083032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952083027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6903f12ac8ae44a41ba2a44700ec60ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pc2D: {fileID: 1952083028}
+  UseNumericBoundaries: 1
+  UseTopBoundary: 1
+  TopBoundary: 350
+  TargetTopBoundary: 0
+  UseBottomBoundary: 1
+  BottomBoundary: -350
+  TargetBottomBoundary: 0
+  UseLeftBoundary: 1
+  LeftBoundary: -440
+  TargetLeftBoundary: 0
+  UseRightBoundary: 1
+  RightBoundary: 440
+  TargetRightBoundary: 0
+  IsCameraPositionHorizontallyBounded: 0
+  IsCameraPositionVerticallyBounded: 0
+  CurrentBoundariesTrigger: {fileID: 0}
+  HasFiredTransitionStarted: 0
+  HasFiredTransitionFinished: 0
+  UseSoftBoundaries: 1
+  Softness: 1.31
+  SoftAreaSize: 0.207
 --- !u!81 &1952083036
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7449,6 +7544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 0
   CameraOffset: {x: -0.5, y: 0}
+  zoom: 0
 --- !u!61 &1984031441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7541,8 +7637,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7622,8 +7718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -124.30968}
-  m_SizeDelta: {x: -11.039307, y: 40.22}
+  m_AnchoredPosition: {x: 0, y: -89.15517}
+  m_SizeDelta: {x: -11.039307, y: 35.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002405700
 MonoBehaviour:
@@ -7795,6 +7891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 17
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &2018878914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7807,37 +7904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2065723441
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2065723442}
-  m_Layer: 0
-  m_Name: "testowy obiekt \u017Ceby naprawi\u0107 bl\u0105d (kt\xF3ry nie jest z
-    mojej winy)"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2065723442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065723441}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.351895, y: -37.35689, z: -48.40625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2105667873
 GameObject:
   m_ObjectHideFlags: 0
@@ -8094,6 +8160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 5
   CameraOffset: {x: 0, y: 0}
+  zoom: 0
 --- !u!114 &2114398600
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-﻿
+﻿using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,23 +12,29 @@ public class ExplorationMode : MonoBehaviour
     public GameObject modalWindow;
     public Vector3 skala;
     public static bool isDoubleClick;
+    public static Transform trans;
 
     private GameObject objToFind;
     private int layerIndex;
     private int goNumber;
     private float lastClickTime;
     private float timeSinceLastClick;
+    private ObjectProperties objProp;
 
     private void Start()
     {
         layerIndex = LayerMask.NameToLayer("ObjectsToFind");
+
         isClickable = true;
         maskActive = false;
         isDoubleClick = false;
+
+        objProp = this.gameObject.GetComponent<ObjectProperties>();
     }
 
     private void OnMouseDown()
     {
+        //Double click check
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("normal");
@@ -42,11 +48,13 @@ public class ExplorationMode : MonoBehaviour
 
             lastClickTime = Time.time;
         }
+
         if (isClickable && isDoubleClick)
         {
-            Debug.Log("double: " + isDoubleClick);
             if (maskActive)
             {
+                ProCamera2D.Instance.RemoveCameraTarget(trans);
+
                 CloseBlend();
             }
             else if (!maskActive)
@@ -56,7 +64,12 @@ public class ExplorationMode : MonoBehaviour
                 this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
                 this.gameObject.tag = "ActiveObject";
                 GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+                trans = this.transform;
 
+                ProCamera2D.Instance.AddCameraTarget(trans);
+                ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.x = objProp.CameraOffset.x;
+
+                //tu gdzieś trzeba ustawić target(nadpisać also), dodać offsetowanie kamery, w ogóle focus kamery i trzeba dodać przesuwanie modala prawo/lewo
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
                 this.gameObject.GetComponent<Tester>().GetNewMessageExplore(goNumber);
                 OpenModal();
