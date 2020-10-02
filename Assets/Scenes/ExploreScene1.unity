@@ -338,7 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 9
   CameraOffset: {x: -0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &48505362
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -746,6 +746,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &75967975
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -794,7 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 7
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &75967977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,6 +1010,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &335816052
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1056,7 +1060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 9
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &335816054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,7 +1324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 7
   CameraOffset: {x: -0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &375572686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1567,6 +1571,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &452927055
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1616,7 +1622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 11
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &452927057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,6 +1737,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &484322514
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1778,7 +1786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 8
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &484322516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,6 +1900,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &530314069
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1944,7 +1954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 6
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &530314071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,7 +2065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 3
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &544514667
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3089,6 +3099,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &779650465
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3139,7 +3151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 10
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &779650467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3254,6 +3266,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &799887170
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3302,7 +3316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 3
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &799887172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3466,6 +3480,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &846995595
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3518,7 +3534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 12
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &846995597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3633,6 +3649,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &877081037
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3679,7 +3697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 15
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &877081039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3941,6 +3959,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1011259583
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3992,7 +4012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 4
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1011259585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,8 +4221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 1
-  CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  CameraOffset: {x: 50, y: 0}
+  zoomSize: 120
 --- !u!331 &1080030279
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4282,6 +4302,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1080030282
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4418,7 +4440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 10
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1137491108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4543,7 +4565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 1
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1148989641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4668,7 +4690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 6
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1185938543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4797,6 +4819,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1193307846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4842,7 +4866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 16
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1193307848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5191,6 +5215,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1233302303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5243,7 +5269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 18
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1233302305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5434,7 +5460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 5
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!1 &1283084036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,7 +5788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 8
   CameraOffset: {x: -0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1301802489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6002,7 +6028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 11
   CameraOffset: {x: -0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1399811676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6343,6 +6369,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1535045670
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6393,7 +6421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 14
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1535045672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6628,6 +6656,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1678413528
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6674,7 +6704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 2
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1678413530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6785,7 +6815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 4
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1686643133
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6914,6 +6944,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1734427872
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6960,7 +6992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 13
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1734427874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7020,7 +7052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 2
   CameraOffset: {x: 0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1755743639
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7200,6 +7232,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &1939616842
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7251,7 +7285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 0
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &1939616844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7544,7 +7578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 0
   CameraOffset: {x: -0.5, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!61 &1984031441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7845,6 +7879,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &2018878912
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7891,7 +7927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 17
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &2018878914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8112,6 +8148,8 @@ MonoBehaviour:
   maskActive: 0
   modalWindow: {fileID: 414659921}
   skala: {x: 0, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
 --- !u!60 &2114398598
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8160,7 +8198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectNumber: 5
   CameraOffset: {x: 0, y: 0}
-  zoom: 0
+  zoomSize: 0
 --- !u!114 &2114398600
 MonoBehaviour:
   m_ObjectHideFlags: 0

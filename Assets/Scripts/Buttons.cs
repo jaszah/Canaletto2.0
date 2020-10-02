@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Com.LuisPedroFonseca.ProCamera2D;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
@@ -70,6 +71,7 @@ public class Buttons : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<ExplorationMode>().maskActive = false;
         ExplorationMode.isDoubleClick = false;
+        ProCamera2D.Instance.RemoveCameraTarget(ExplorationMode.trans);
 
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<SpriteMask>().frontSortingOrder = -1;
         GameObject.FindGameObjectWithTag("ActiveObject").gameObject.tag = "ObjectToFind";

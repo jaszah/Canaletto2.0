@@ -6,5 +6,5 @@ public class ObjectProperties : MonoBehaviour
 {
     public int objectNumber;
     public Vector2 CameraOffset;
-    public float zoom;
+    public float zoomSize;
 }
