@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ListaObrazow.unity
     guid: 99797069ca5eb354799893ee11ba138c
+  - enabled: 1
+    path: Assets/Scenes/StartSceneGame.unity
+    guid: a705a115d20882545a4832e180ebfbac
   m_configObjects: {}
