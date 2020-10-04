@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TransitionScene.unity
     guid: fa78c16691565f44d8a3581264909eca
   - enabled: 1
+    path: Assets/Scenes/StartGameScene.unity
+    guid: a705a115d20882545a4832e180ebfbac
+  - enabled: 1
     path: Assets/Scenes/Scena1.unity
     guid: f3682d95e9302d14cbeb6ba5e0cf1cea
   - enabled: 1
@@ -48,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ListaObrazow.unity
     guid: 99797069ca5eb354799893ee11ba138c
   - enabled: 1
-    path: Assets/Scenes/StartSceneGame.unity
-    guid: a705a115d20882545a4832e180ebfbac
+    path: Assets/Scenes/GameHelp.unity
+    guid: 575b4a1d84d208c439b0c7d4d221c3c9
+  - enabled: 1
+    path: Assets/Scenes/ExploHelp.unity
+    guid: 29db1e695b804ad4b939af93d1e5a6c9
   m_configObjects: {}

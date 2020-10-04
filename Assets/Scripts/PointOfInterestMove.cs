@@ -1,10 +1,4 @@
-﻿using Com.LuisPedroFonseca.ProCamera2D;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UI;
-using TMPro;
+﻿using UnityEngine;
 
 public class PointOfInterestMove : MonoBehaviour
 {

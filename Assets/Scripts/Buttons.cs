@@ -8,9 +8,11 @@ public class Buttons : MonoBehaviour
     public static int CompletedExplorationSceneIndex = 0;
 
     public static int FirstGameSceneIndex = 2;
-    public static int FirstExplorationSceneIndex = 13;
+    public static int FirstExplorationSceneIndex = 14;
 
-    private int EndScene = 7;
+    public static int previousSceneIndex;
+
+    private int EndScene = 8;
 
     public static bool gameMode = true;
 
@@ -48,16 +50,16 @@ public class Buttons : MonoBehaviour
     public void GameMode()
     {
         gameMode = true;
-        StartGameScene();
+        StartGame();
     }
 
     public void ExploMode()
     {
         gameMode = false;
-        StartGameScene();
+        StartGame();
     }
 
-    public void StartGameScene()
+    public void StartGame()
     {
         if (gameMode)
         {
@@ -96,6 +98,11 @@ public class Buttons : MonoBehaviour
         SceneManager.LoadScene(PaintingChange.exSceneName);
     }
 
+    public void StartGameScene()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void SetGameMode()
     {
         SceneManager.LoadScene(0);
@@ -104,5 +111,24 @@ public class Buttons : MonoBehaviour
     public void QuitApp()
     {
         Application.Quit();
+    }
+
+    public void HelpButton()
+    {
+        previousSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if (gameMode)
+        {
+            SceneManager.LoadScene(15);
+        }
+        else
+        {
+            SceneManager.LoadScene(16);
+        }
+    }
+
+    public void IGotHelp()
+    {
+        SceneManager.LoadScene(previousSceneIndex);
     }
 }

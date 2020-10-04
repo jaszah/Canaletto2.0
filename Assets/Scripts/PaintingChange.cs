@@ -1,17 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Numerics;
-using TMPro;
-//using UnityEditor;
-//using UnityEditor.Build.Content;
+﻿using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PaintingChange : MonoBehaviour
 {
     public int pNumber;
-    public static string exSceneName;
+    public static string exSceneName = "ExploreScene1";
 
     public Image smolImg;
     public Image bigImg;
