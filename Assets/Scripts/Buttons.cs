@@ -16,8 +16,6 @@ public class Buttons : MonoBehaviour
 
     public static bool gameMode = true;
 
-    LevelLoader ll = new LevelLoader();
-
     public void NextGameScene()
     {
         if (gameMode)

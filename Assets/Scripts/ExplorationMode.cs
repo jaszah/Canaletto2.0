@@ -14,6 +14,7 @@ public class ExplorationMode : MonoBehaviour
     public static Transform trans;
     public Camera cam;
     public float smoothSize;
+    public static int sceneNumber;
 
     private int goNumber;
     private float lastClickTime;
@@ -64,6 +65,8 @@ public class ExplorationMode : MonoBehaviour
             }
             else if (!maskActive)
             {
+                Debug.Log(sceneNumber);
+
                 MPanZoom.isOn = false;
                 maskActive = true;
                 this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
@@ -80,7 +83,7 @@ public class ExplorationMode : MonoBehaviour
                 });
 
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
-                this.gameObject.GetComponent<Tester>().GetNewMessageExplore(goNumber);
+                this.gameObject.GetComponent<ModalMessages>().GetNewMessageExplore(goNumber, sceneNumber);
                 OpenModal();
 
                 for (int i = 0; i < objectsArray.Length; i++)

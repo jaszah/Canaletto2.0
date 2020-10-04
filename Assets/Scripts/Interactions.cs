@@ -27,12 +27,13 @@ public class Interactions : MonoBehaviour
     public GameObject mistake3;
     public static int allPlayableScenes = 5;
     public GameObject objectsToFindText;
+    private static int sceneNumber = 0;
 
     void Start()
     {
         jstckFx = GameObject.Find("JoystickFIxed"); //mobile joystick
 
-        GameObject.Find("ClickButton").GetComponent<Tester>().GetNewMessage();
+        GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(sceneNumber);
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
 
         numberOfObjectsToFind = GameObject.FindGameObjectsWithTag("ObjecToFind").Length;
@@ -54,6 +55,8 @@ public class Interactions : MonoBehaviour
 
         if (numberOfObjectsToFind == 0)
         {
+            sceneNumber++;
+
             Buttons.CompletedGameSceneIndex = SceneManager.GetActiveScene().buildIndex;
             NextSceneTransition();
         }
@@ -146,7 +149,7 @@ public class Interactions : MonoBehaviour
     void OpeningWindow()
     {
         openWindow = true;
-        GameObject.Find("ClickButton").GetComponent<Tester>().GetNewMessage();
+        GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(sceneNumber);
         jstckFx.SetActive(false);
         LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 0f, 0f);
         LeanTween.scale(GameObject.Find("ModalWindow"), skala, 0f);

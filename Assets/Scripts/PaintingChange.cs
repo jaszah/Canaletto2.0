@@ -38,6 +38,8 @@ public class PaintingChange : MonoBehaviour
 
                 exSceneName = "ExploreScene" + pNumber.ToString();
                 bigButtonDesc.text = pDescriptions[0];
+
+                ExplorationMode.sceneNumber = pNumber - 1;
                 break;
 
             case 2:
@@ -46,6 +48,8 @@ public class PaintingChange : MonoBehaviour
 
                 exSceneName = "ExploreScene" + pNumber.ToString();
                 bigButtonDesc.text = pDescriptions[1];
+
+                ExplorationMode.sceneNumber = pNumber - 1;
                 break;
 
             case 3:
@@ -54,7 +58,9 @@ public class PaintingChange : MonoBehaviour
 
                 exSceneName = "ExploreScene" + pNumber.ToString();
                 bigButtonDesc.text = pDescriptions[2];
-                break; ;
+
+                ExplorationMode.sceneNumber = pNumber - 1;
+                break;
 
             case 4:
                 bigButtonImg.text = pNumber.ToString();
@@ -62,6 +68,8 @@ public class PaintingChange : MonoBehaviour
 
                 exSceneName = "ExploreScene" + pNumber.ToString();
                 bigButtonDesc.text = pDescriptions[3];
+
+                ExplorationMode.sceneNumber = pNumber - 1;
                 break;
 
             case 5:
@@ -70,6 +78,8 @@ public class PaintingChange : MonoBehaviour
 
                 exSceneName = "ExploreScene" + pNumber.ToString();
                 bigButtonDesc.text = pDescriptions[4];
+
+                ExplorationMode.sceneNumber = pNumber - 1;
                 break;
         }
     }
