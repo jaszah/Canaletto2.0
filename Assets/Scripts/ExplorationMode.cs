@@ -1,5 +1,4 @@
 ﻿using Com.LuisPedroFonseca.ProCamera2D;
-using TMPro;
 using UnityEngine;
 
 public class ExplorationMode : MonoBehaviour
@@ -16,8 +15,6 @@ public class ExplorationMode : MonoBehaviour
     public Camera cam;
     public float smoothSize;
     public static int sceneNumber;
-    public TextMeshProUGUI body;
-    public GameObject helpButton;
 
     private int goNumber;
     private float lastClickTime;
@@ -26,7 +23,6 @@ public class ExplorationMode : MonoBehaviour
     private float previousSize;
 
     SmoothingZoom smoothZ = new SmoothingZoom();
-    ModalManager modalManager = new ModalManager();
 
     private void Start()
     {
@@ -35,7 +31,6 @@ public class ExplorationMode : MonoBehaviour
         isDoubleClick = false;
 
         objProp = this.gameObject.GetComponent<ObjectProperties>();
-        helpButton = GameObject.Find("HelpButton");
     }
 
     private void OnMouseDown()
@@ -60,11 +55,17 @@ public class ExplorationMode : MonoBehaviour
         {
             if (maskActive)
             {
+                ProCamera2D.Instance.RemoveCameraTarget(trans);
+
+                LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, 2f).setOnUpdate((float flt) => {
+                    cam.orthographicSize = flt;
+                });
+
                 CloseBlend();
             }
             else if (!maskActive)
             {
-                helpButton.SetActive(false);
+                Debug.Log(sceneNumber);
 
                 MPanZoom.isOn = false;
                 maskActive = true;
@@ -109,7 +110,6 @@ public class ExplorationMode : MonoBehaviour
         GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
 
         modalWindow.SetActive(false);
-        body.text = " ";
 
         for (int i = 0; i < objectsArray.Length; i++)
         {
@@ -119,12 +119,5 @@ public class ExplorationMode : MonoBehaviour
         blend.SetActive(false);
         MPanZoom.isOn = true;
         isDoubleClick = false;
-        helpButton.SetActive(true);
-
-        ProCamera2D.Instance.RemoveCameraTarget(trans);
-
-        LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, 2f).setOnUpdate((float flt) => {
-            cam.orthographicSize = flt;
-        });
     }
 }
