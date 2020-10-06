@@ -15,6 +15,8 @@ public class Buttons : MonoBehaviour
     private int EndScene = 8;
 
     public static bool gameMode = true;
+    public GameObject helpButton;
+    
 
     public void NextGameScene()
     {
@@ -71,6 +73,8 @@ public class Buttons : MonoBehaviour
 
     public void CloseBlendButton()
     {
+        helpButton.SetActive(true);
+
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<ExplorationMode>().maskActive = false;
         ExplorationMode.isDoubleClick = false;
         ProCamera2D.Instance.RemoveCameraTarget(ExplorationMode.trans);
