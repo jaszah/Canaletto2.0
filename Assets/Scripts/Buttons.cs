@@ -6,15 +6,21 @@ public class Buttons : MonoBehaviour
 {
     public static int CompletedGameSceneIndex = 0;
     public static int CompletedExplorationSceneIndex = 0;
-
     public static int FirstGameSceneIndex = 2;
     public static int FirstExplorationSceneIndex = 14;
-
     public static int previousSceneIndex;
 
     private int EndScene = 8;
 
     public static bool gameMode = true;
+    public float previousSize;
+    public Camera cam;
+    public GameObject helpButton;
+
+    private void Update()
+    {
+        Debug.Log("Buttons: " + previousSize);
+    }
 
     public void NextGameScene()
     {
@@ -86,8 +92,13 @@ public class Buttons : MonoBehaviour
             objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = true;
         }
 
+        LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, .5f).setOnUpdate((float flt) => {
+            cam.orthographicSize = flt;
+        });
+
         GameObject.Find("blend").SetActive(false);
         MPanZoom.isOn = true;
+        helpButton.SetActive(true);
 
     }
 

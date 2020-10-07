@@ -15,14 +15,13 @@ public class ExplorationMode : MonoBehaviour
     public Camera cam;
     public float smoothSize;
     public static int sceneNumber;
+    public GameObject helpButton;
+    public float previousSize;
 
     private int goNumber;
     private float lastClickTime;
     private float timeSinceLastClick;
     private ObjectProperties objProp;
-    private float previousSize;
-
-    SmoothingZoom smoothZ = new SmoothingZoom();
 
     private void Start()
     {
@@ -56,16 +55,12 @@ public class ExplorationMode : MonoBehaviour
             if (maskActive)
             {
                 ProCamera2D.Instance.RemoveCameraTarget(trans);
-
-                LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, 2f).setOnUpdate((float flt) => {
-                    cam.orthographicSize = flt;
-                });
-
+                LeanIn();
                 CloseBlend();
             }
             else if (!maskActive)
             {
-                Debug.Log(sceneNumber);
+                Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
 
                 MPanZoom.isOn = false;
                 maskActive = true;
@@ -78,19 +73,20 @@ public class ExplorationMode : MonoBehaviour
                 ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.x = objProp.CameraOffset.x;
 
                 previousSize = Camera.main.orthographicSize;
-                LeanTween.value(cam.gameObject, cam.orthographicSize, objProp.zoomSize, 1.7f).setOnUpdate((float flt) => {
-                    cam.orthographicSize = flt;
-                });
+                Debug.Log(previousSize);
+                buttons.previousSize = Camera.main.orthographicSize;
 
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
                 this.gameObject.GetComponent<ModalMessages>().GetNewMessageExplore(goNumber, sceneNumber);
                 OpenModal();
+                LeanOut();
 
                 for (int i = 0; i < objectsArray.Length; i++)
                 {
                     objectsArray[i].gameObject.GetComponent<ExplorationMode>().isClickable = false;
                 }
 
+                helpButton.SetActive(false);
                 blend.SetActive(true);
             }
         }
@@ -119,5 +115,21 @@ public class ExplorationMode : MonoBehaviour
         blend.SetActive(false);
         MPanZoom.isOn = true;
         isDoubleClick = false;
+        helpButton.SetActive(true);
+    }
+
+    public void LeanOut()
+    {
+        LeanTween.value(cam.gameObject, cam.orthographicSize, objProp.zoomSize, .5f).setOnUpdate((float flt) => {
+            cam.orthographicSize = flt;
+        });
+    }
+
+    public void LeanIn()
+    {
+        Debug.Log(previousSize);
+        LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, .5f).setOnUpdate((float flt) => {
+            cam.orthographicSize = flt;
+        });
     }
 }

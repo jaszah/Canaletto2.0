@@ -905,6 +905,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &75967975
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1169,6 +1171,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &335816052
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1309,6 +1313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3983a7a544eb541b63b388ab4c1aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  previousSize: 0
+  cam: {fileID: 1952083029}
+  helpButton: {fileID: 1749803508}
 --- !u!1 &347734638
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1737,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &452927055
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1896,6 +1905,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &484322514
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2060,6 +2071,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &530314069
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3259,6 +3272,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &779650465
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3426,6 +3441,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &799887170
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3642,6 +3659,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &846995595
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3814,6 +3833,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &877081037
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4125,6 +4146,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1011259583
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4465,6 +4488,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1080030282
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4992,6 +5017,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 0}
+  previousSize: 0
 --- !u!60 &1193307846
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5388,6 +5415,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 0}
+  previousSize: 0
 --- !u!60 &1233302303
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6183,6 +6212,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1383879753
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6574,6 +6605,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1460796495
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6866,6 +6899,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1535045670
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7153,6 +7188,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &1678413528
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7441,6 +7478,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 0}
+  previousSize: 0
 --- !u!60 &1734427872
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7513,7 +7552,7 @@ GameObject:
   - component: {fileID: 1749803511}
   - component: {fileID: 1749803510}
   m_Layer: 5
-  m_Name: Image
+  m_Name: HelpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7858,6 +7897,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 0}
+  previousSize: 0
 --- !u!60 &1939616842
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8505,6 +8546,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 0}
+  previousSize: 0
 --- !u!60 &2018878912
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8774,6 +8817,8 @@ MonoBehaviour:
   skala: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!60 &2114398598
 PolygonCollider2D:
   m_ObjectHideFlags: 0
