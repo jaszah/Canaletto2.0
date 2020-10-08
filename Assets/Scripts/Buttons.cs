@@ -17,11 +17,6 @@ public class Buttons : MonoBehaviour
     public Camera cam;
     public GameObject helpButton;
 
-    private void Update()
-    {
-        Debug.Log("Buttons: " + previousSize);
-    }
-
     public void NextGameScene()
     {
         if (gameMode)
