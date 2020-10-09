@@ -232,47 +232,9 @@ public class ModalMessages : MonoBehaviour
         "W XVIII wieku nie było jeszcze placu Zamkowego. Kolumna Zygmunta została wzniesiona na niewielkim placyku przed Bramą Krakowską prowadzącą od Starej Warszawy na dziedziniec przedni Zamku Królewskiego. Przez wieki brama obrosła zabudowaniami gospodarczymi Zamku i kamienicami. W jednej z nich mieściła się apteka królewska. Rozbiórka bramy wraz z otaczającymi ją zabudowaniami w latach 1818–1821 umożliwiła utworzenie placu Zamkowego zaprojektowanego przez Jakuba Kubickiego. Śladem tego miejsca jest zrekonstruowany w 1983 roku gotycki most, który w średniowieczu prowadził do Bramy Krakowskiej."
     };
 
-    public void GetNewMessage(int sceneNumber)
+    public void GetNewMessage(string headerKey, string bodyKey)
     {
-        switch(sceneNumber){
-            case 0: 
-                ModalManager.instance.ShowModal(headers0[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages0[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
-                break;
-            case 1:
-                ModalManager.instance.ShowModal(headers1[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages1[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
-                break;
-            case 2:
-                ModalManager.instance.ShowModal(headers2[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages2[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
-                break;
-            case 3:
-                ModalManager.instance.ShowModal(headers3[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages3[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
-                break;
-            case 4:
-                ModalManager.instance.ShowModal(headers4[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr], messages4[GameObject.Find("PointOfInterest").GetComponent<Interactions>().objectnr]);
-                break;
-        }
-    }
-
-    public void GetNewMessageExplore(int goNumber, int sceneNumber)
-    {
-        switch (sceneNumber)
-        {
-            case 0:
-                ModalManager.instance.ShowModal(exHeaders0[goNumber], exMessages0[goNumber]);
-                break;
-            case 1:
-                ModalManager.instance.ShowModal(exHeaders1[goNumber], exMessages1[goNumber]);
-                break;
-            case 2:
-                ModalManager.instance.ShowModal(exHeaders2[goNumber], exMessages2[goNumber]);
-                break;
-            case 3:
-                ModalManager.instance.ShowModal(exHeaders3[goNumber], exMessages3[goNumber]);
-                break;
-            case 4:
-                ModalManager.instance.ShowModal(exHeaders4[goNumber], exMessages4[goNumber]);
-                break;
-        }
+        ModalManager.instance.ShowModal(headerKey, bodyKey);
     }
 
 }

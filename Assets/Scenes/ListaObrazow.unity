@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1523,6 +1523,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3983a7a544eb541b63b388ab4c1aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  previousSize: 0
+  cam: {fileID: 0}
+  helpButton: {fileID: 0}
 --- !u!1 &1052723978 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5301608620564392917, guid: aa694f3d815bfe540bc775c926b95633,
@@ -2419,8 +2422,9 @@ GameObject:
   - component: {fileID: 1632101532}
   - component: {fileID: 1632101535}
   - component: {fileID: 1632101533}
+  - component: {fileID: 1632101534}
   m_Layer: 5
-  m_Name: TDescription
+  m_Name: PaintingDesc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2560,6 +2564,20 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1632101534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632101531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: p_desc_one
+  onStart: 1
 --- !u!222 &1632101535
 CanvasRenderer:
   m_ObjectHideFlags: 0

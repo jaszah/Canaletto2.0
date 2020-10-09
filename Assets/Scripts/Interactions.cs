@@ -27,13 +27,16 @@ public class Interactions : MonoBehaviour
     public GameObject mistake3;
     public static int allPlayableScenes = 5;
     public GameObject objectsToFindText;
-    private static int sceneNumber = 0;
+    public static int sceneNumber = 0;
+
+    private string headerKey;
+    private string descKey;
 
     void Start()
     {
         jstckFx = GameObject.Find("JoystickFIxed"); //mobile joystick
 
-        GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(sceneNumber);
+        //GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(headerKey, descKey);
         GameObject.Find("CanvasNormal").GetComponent<ModalManager>().modalWindow.SetActive(false);
 
         numberOfObjectsToFind = GameObject.FindGameObjectsWithTag("ObjecToFind").Length;
@@ -148,8 +151,11 @@ public class Interactions : MonoBehaviour
 
     void OpeningWindow()
     {
+        headerKey = "game" + sceneNumber.ToString() + "_header" + objectnr.ToString();
+        descKey = "game" + sceneNumber.ToString() + "_desc" + objectnr.ToString();
+        GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(headerKey, descKey);//trzeba zmienic jak w explolre
+
         openWindow = true;
-        GameObject.Find("ClickButton").GetComponent<ModalMessages>().GetNewMessage(sceneNumber);
         jstckFx.SetActive(false);
         LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 0f, 0f);
         LeanTween.scale(GameObject.Find("ModalWindow"), skala, 0f);
@@ -158,6 +164,9 @@ public class Interactions : MonoBehaviour
         LeanTween.alpha(GameObject.Find("ModalWindow").GetComponent<RectTransform>(), 1f, 2f);
         GameCamera.GetComponent<ProCamera2D>().OffsetX = camOffset;
         triggeredObject.GetComponent<SpriteRenderer>().material = selectedMat;
+
+        Debug.Log(headerKey);
+        Debug.Log(descKey);
     }
 
     void ClosingWindow()

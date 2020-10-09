@@ -22,6 +22,8 @@ public class ExplorationMode : MonoBehaviour
     private float lastClickTime;
     private float timeSinceLastClick;
     private ObjectProperties objProp;
+    private string headerKey;
+    private string descKey;
 
     private void Start()
     {
@@ -62,6 +64,9 @@ public class ExplorationMode : MonoBehaviour
             {
                 Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
 
+                headerKey = "explo" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
+                descKey = "explo" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();
+
                 MPanZoom.isOn = false;
                 maskActive = true;
                 this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
@@ -77,7 +82,7 @@ public class ExplorationMode : MonoBehaviour
                 buttons.previousSize = Camera.main.orthographicSize;
 
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
-                this.gameObject.GetComponent<ModalMessages>().GetNewMessageExplore(goNumber, sceneNumber);
+                this.gameObject.GetComponent<ModalMessages>().GetNewMessage(headerKey, descKey);//to prob można skrócić do ModalManagera, zmaiast messages -> manager
                 OpenModal();
                 LeanOut();
 
@@ -88,6 +93,9 @@ public class ExplorationMode : MonoBehaviour
 
                 helpButton.SetActive(false);
                 blend.SetActive(true);
+
+                Debug.Log(headerKey);
+                Debug.Log(descKey);
             }
         }
     }

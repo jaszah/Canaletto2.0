@@ -30,14 +30,18 @@ public class PaintingChange : MonoBehaviour
 
     public void PChange()
     {
+        TextLocalizerUI txtLocalizer = GameObject.Find("PaintingDesc").GetComponent<TextLocalizerUI>();
+
         switch (pNumber)
         {
             case 1:
                 bigButtonImg.text = pNumber.ToString();
                 bigImg.sprite = smolImg.sprite;
 
+                txtLocalizer.key = "p_desc_two";
+                txtLocalizer.SetText();
+
                 exSceneName = "ExploreScene" + pNumber.ToString();
-                bigButtonDesc.text = pDescriptions[0];
 
                 ExplorationMode.sceneNumber = pNumber - 1;
                 break;
