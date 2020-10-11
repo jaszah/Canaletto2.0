@@ -1,5 +1,6 @@
 ﻿using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ExplorationMode : MonoBehaviour
 {

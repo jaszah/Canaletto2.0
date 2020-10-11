@@ -9,7 +9,7 @@ public class LocalizationSystem : MonoBehaviour
         English
     }
 
-    public static Language language = Language.English;
+    public static Language language = Language.Polish;
 
     public static Dictionary<string, string> localisedPL;
     public static Dictionary<string, string> localisedEN;

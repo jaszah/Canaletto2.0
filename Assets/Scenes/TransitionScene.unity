@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 140820833}
   - component: {fileID: 140820831}
   - component: {fileID: 140820832}
+  - component: {fileID: 140820834}
   m_Layer: 5
   m_Name: CongText
   m_TagString: Untagged
@@ -299,6 +300,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140820829}
   m_CullTransparentMesh: 0
+--- !u!114 &140820834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140820829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: trans_scene_text
+  onStart: 1
 --- !u!1 &396260472
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +574,7 @@ GameObject:
   - component: {fileID: 775572345}
   - component: {fileID: 775572347}
   - component: {fileID: 775572346}
+  - component: {fileID: 775572348}
   m_Layer: 5
   m_Name: Header
   m_TagString: Untagged
@@ -706,6 +722,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775572344}
   m_CullTransparentMesh: 0
+--- !u!114 &775572348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775572344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: great_job
+  onStart: 1
 --- !u!1 &897903988
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +748,7 @@ GameObject:
   - component: {fileID: 897903992}
   - component: {fileID: 897903990}
   - component: {fileID: 897903991}
+  - component: {fileID: 897903993}
   m_Layer: 5
   m_Name: NextSceneButton
   m_TagString: Untagged
@@ -885,6 +916,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897903988}
   m_CullTransparentMesh: 0
+--- !u!114 &897903993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897903988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: next_scene
+  onStart: 1
 --- !u!1 &1040929619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1402,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3983a7a544eb541b63b388ab4c1aae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  previousSize: 0
+  cam: {fileID: 0}
+  helpButton: {fileID: 0}
 --- !u!1 &1542319528
 GameObject:
   m_ObjectHideFlags: 0
