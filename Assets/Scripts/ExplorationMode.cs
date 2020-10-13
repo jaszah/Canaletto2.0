@@ -65,14 +65,14 @@ public class ExplorationMode : MonoBehaviour
             {
                 Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
 
-                headerKey = "explo" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
+                headerKey = "explo" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();//jest
                 descKey = "explo" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();
 
                 MPanZoom.isOn = false;
                 maskActive = true;
-                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
-                this.gameObject.tag = "ActiveObject";
-                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;//niepotrzebne
+                this.gameObject.tag = "ActiveObject";//jest
+                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");//jest
                 trans = this.transform;
 
                 ProCamera2D.Instance.AddCameraTarget(trans);

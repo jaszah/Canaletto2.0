@@ -46,7 +46,7 @@ public class Buttons : MonoBehaviour
     
     }
 
-    public void GameMode()
+    public void GameModeSet()
     {
         gameMode = true;
         StartGame();
@@ -95,6 +95,29 @@ public class Buttons : MonoBehaviour
         MPanZoom.isOn = true;
         helpButton.SetActive(true);
 
+    }
+
+    public void CloseGameModal()
+    {
+        GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<GameMode>().modalActive = false;
+        ProCamera2D.Instance.RemoveCameraTarget(GameMode.trans);
+
+        GameObject.FindGameObjectWithTag("ActiveObject").gameObject.tag = "ObjectToFind";
+        GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
+
+        for (int i = 0; i < objectsArray.Length; i++)
+        {
+            objectsArray[i].gameObject.GetComponent<GameMode>().isClickable = true;
+        }
+
+        LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, .5f).setOnUpdate((float flt) => {
+            cam.orthographicSize = flt;
+        });
+
+        GameObject.Find("ModalWindow").SetActive(false);
+
+        MPanZoom.isOn = true;
+        GameMode.isDoubleClick = false;
     }
 
     public void StartExScene()

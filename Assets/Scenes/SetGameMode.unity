@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 15.299988, y: 114}
+  m_AnchoredPosition: {x: 15.300049, y: 114}
   m_SizeDelta: {x: -1164.0759, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12590229
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: set_mode
+  onStart: 1
 --- !u!114 &12590230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: set_mode_game
+  onStart: 1
 --- !u!114 &782703584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,6 +1414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: set_mode_explore
+  onStart: 1
 --- !u!114 &1250444756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,7 +1617,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 661029094}
-        m_MethodName: GameMode
+        m_MethodName: GameModeSet
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
