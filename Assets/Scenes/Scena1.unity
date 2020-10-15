@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &37338055
 RectTransform:
   m_ObjectHideFlags: 0
@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -1153,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &229782886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,6 +1615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -1774,6 +1776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -1802,6 +1805,7 @@ GameObject:
   - component: {fileID: 544757606}
   - component: {fileID: 544757607}
   - component: {fileID: 544757609}
+  - component: {fileID: 544757610}
   m_Layer: 5
   m_Name: SterTouch
   m_TagString: Untagged
@@ -2023,6 +2027,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &544757610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544757604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: touch_steering
+  onStart: 1
 --- !u!1 &555157187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2213,7 @@ GameObject:
   - component: {fileID: 673566940}
   - component: {fileID: 673566942}
   - component: {fileID: 673566941}
+  - component: {fileID: 673566943}
   m_Layer: 5
   m_Name: Header
   m_TagString: Untagged
@@ -2342,6 +2361,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673566939}
   m_CullTransparentMesh: 0
+--- !u!114 &673566943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673566939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: settings
+  onStart: 1
 --- !u!1 &704697405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,6 +2544,7 @@ GameObject:
   - component: {fileID: 710591918}
   - component: {fileID: 710591919}
   - component: {fileID: 710591921}
+  - component: {fileID: 710591922}
   m_Layer: 5
   m_Name: GoBack
   m_TagString: Untagged
@@ -2728,6 +2762,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &710591922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710591916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: go_back
+  onStart: 1
 --- !u!1 &728326726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,6 +3821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -3935,6 +3984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -4098,6 +4148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -4255,6 +4306,7 @@ GameObject:
   - component: {fileID: 1200850690}
   - component: {fileID: 1200850691}
   - component: {fileID: 1200850693}
+  - component: {fileID: 1200850694}
   m_Layer: 5
   m_Name: SterJoystick
   m_TagString: Untagged
@@ -4476,6 +4528,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1200850694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200850688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e95df3d67cfd142bf73507d2726d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: joystick_steering
+  onStart: 1
 --- !u!1 &1264340293
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,6 +4677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -4855,6 +4922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -5307,6 +5375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -5967,6 +6036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -6130,6 +6200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0
@@ -6810,6 +6881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   isClickable: 1
   modalActive: 0
   previousSize: 0

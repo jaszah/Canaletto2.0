@@ -5,6 +5,7 @@ public class GameMode : MonoBehaviour
 {
     public Camera cam;
     public GameObject modalWindow;
+    public Material material;
     public bool isClickable = true;
     public bool modalActive = false;
     public float previousSize;
@@ -50,7 +51,9 @@ public class GameMode : MonoBehaviour
 
                 LeanIn();
 
-                this.gameObject.tag = "ObjectToFind";
+                LeanTween.alpha(this.gameObject, 0f, 1f);
+                Destroy(this.gameObject, 1f);
+
                 GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
 
                 for (int i = 0; i < objectsArray.Length; i++)
@@ -67,6 +70,8 @@ public class GameMode : MonoBehaviour
             else
             {
                 Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
+
+                this.GetComponent<SpriteRenderer>().material = material;
 
                 headerKey = "game" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
                 descKey = "game" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();

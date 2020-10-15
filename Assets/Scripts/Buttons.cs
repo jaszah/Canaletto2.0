@@ -100,6 +100,8 @@ public class Buttons : MonoBehaviour
     public void CloseGameModal()
     {
         GameObject.FindGameObjectWithTag("ActiveObject").GetComponent<GameMode>().modalActive = false;
+        LeanTween.alpha(GameObject.FindGameObjectWithTag("ActiveObject"), 0f, 1f);
+        Destroy(GameObject.FindGameObjectWithTag("ActiveObject"), 1f);
         ProCamera2D.Instance.RemoveCameraTarget(GameMode.trans);
 
         GameObject.FindGameObjectWithTag("ActiveObject").gameObject.tag = "ObjectToFind";
