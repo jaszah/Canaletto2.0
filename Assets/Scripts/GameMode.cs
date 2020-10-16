@@ -37,6 +37,7 @@ public class GameMode : MonoBehaviour
             if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
             {
                 isDoubleClick = true;
+                Debug.Log("dobule od gamemode");
             }
 
             lastClickTime = Time.time;
@@ -44,6 +45,8 @@ public class GameMode : MonoBehaviour
 
         if(isClickable && isDoubleClick)
         {
+            ClickChecker.openWinStarted = true;//a tutaj gdzieś trzeba sprawdzać tam gdzies na dole czy sie cos otwierać ma i jesli tak i jeśli zmienna z clickera jest true to trzeba uruchomić funkcje tutaj napisaną
+
             if (modalActive)
             {
                 ProCamera2D.Instance.RemoveCameraTarget(trans);
@@ -62,6 +65,7 @@ public class GameMode : MonoBehaviour
 
                 modalWindow.SetActive(false);
 
+                ClickChecker.openWinStarted = false;
                 MPanZoom.isOn = true;
                 modalActive = false;
                 isDoubleClick = false;
