@@ -703,7 +703,6 @@ GameObject:
   - component: {fileID: 75967973}
   - component: {fileID: 75967975}
   - component: {fileID: 75967974}
-  - component: {fileID: 75967977}
   - component: {fileID: 75967976}
   m_Layer: 9
   m_Name: ObjectMask15
@@ -792,7 +791,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -846,18 +845,6 @@ MonoBehaviour:
   objectNumber: 14
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &75967977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75967971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &229782885
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +956,6 @@ GameObject:
   - component: {fileID: 335816050}
   - component: {fileID: 335816052}
   - component: {fileID: 335816051}
-  - component: {fileID: 335816054}
   - component: {fileID: 335816053}
   m_Layer: 9
   m_Name: ObjectMask12
@@ -1058,7 +1044,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -1112,18 +1098,6 @@ MonoBehaviour:
   objectNumber: 11
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &335816054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335816048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &337885755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1384,6 @@ GameObject:
   - component: {fileID: 452927053}
   - component: {fileID: 452927055}
   - component: {fileID: 452927054}
-  - component: {fileID: 452927057}
   - component: {fileID: 452927056}
   m_Layer: 9
   m_Name: ObjectMask16
@@ -1499,7 +1472,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -1554,18 +1527,6 @@ MonoBehaviour:
   objectNumber: 15
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &452927057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452927051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &484322510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1539,6 @@ GameObject:
   - component: {fileID: 484322512}
   - component: {fileID: 484322514}
   - component: {fileID: 484322513}
-  - component: {fileID: 484322516}
   - component: {fileID: 484322515}
   m_Layer: 9
   m_Name: ObjectMask13
@@ -1667,7 +1627,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -1721,18 +1681,6 @@ MonoBehaviour:
   objectNumber: 12
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &484322516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484322510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &530314065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,7 +1693,6 @@ GameObject:
   - component: {fileID: 530314067}
   - component: {fileID: 530314069}
   - component: {fileID: 530314068}
-  - component: {fileID: 530314071}
   - component: {fileID: 530314070}
   m_Layer: 9
   m_Name: ObjectMask03
@@ -1833,7 +1780,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -1891,18 +1838,6 @@ MonoBehaviour:
   objectNumber: 2
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &530314071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530314065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &544757604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,7 +2800,6 @@ GameObject:
   - component: {fileID: 779650463}
   - component: {fileID: 779650465}
   - component: {fileID: 779650464}
-  - component: {fileID: 779650467}
   - component: {fileID: 779650466}
   m_Layer: 9
   m_Name: ObjectMask14
@@ -2954,7 +2888,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -3010,18 +2944,6 @@ MonoBehaviour:
   objectNumber: 13
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &779650467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779650461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &799887166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,7 +2956,6 @@ GameObject:
   - component: {fileID: 799887168}
   - component: {fileID: 799887170}
   - component: {fileID: 799887169}
-  - component: {fileID: 799887172}
   - component: {fileID: 799887171}
   m_Layer: 9
   m_Name: ObjectMask04
@@ -3123,7 +3044,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -3177,18 +3098,6 @@ MonoBehaviour:
   objectNumber: 3
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &799887172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799887166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &817333845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,7 +3161,6 @@ GameObject:
   - component: {fileID: 846995593}
   - component: {fileID: 846995595}
   - component: {fileID: 846995594}
-  - component: {fileID: 846995597}
   - component: {fileID: 846995596}
   m_Layer: 9
   m_Name: ObjectMask10
@@ -3341,7 +3249,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -3402,18 +3310,6 @@ MonoBehaviour:
   objectNumber: 9
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &846995597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846995591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &877081033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3426,7 +3322,6 @@ GameObject:
   - component: {fileID: 877081035}
   - component: {fileID: 877081037}
   - component: {fileID: 877081036}
-  - component: {fileID: 877081039}
   - component: {fileID: 877081038}
   m_Layer: 9
   m_Name: ObjectMask09
@@ -3515,7 +3410,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -3568,18 +3463,6 @@ MonoBehaviour:
   objectNumber: 8
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &877081039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877081033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &969532036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,7 +3622,6 @@ GameObject:
   - component: {fileID: 1011259581}
   - component: {fileID: 1011259583}
   - component: {fileID: 1011259582}
-  - component: {fileID: 1011259585}
   - component: {fileID: 1011259584}
   m_Layer: 9
   m_Name: ObjectMask06
@@ -3828,7 +3710,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -3882,18 +3764,6 @@ MonoBehaviour:
   objectNumber: 5
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &1011259585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011259579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1059413975
 GameObject:
   m_ObjectHideFlags: 0
@@ -4011,7 +3881,6 @@ GameObject:
   - component: {fileID: 1080030277}
   - component: {fileID: 1080030279}
   - component: {fileID: 1080030281}
-  - component: {fileID: 1080030280}
   - component: {fileID: 1080030278}
   - component: {fileID: 1080030282}
   m_Layer: 9
@@ -4100,18 +3969,6 @@ SpriteMask:
   m_BackSortingOrder: -20
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
---- !u!114 &1080030280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080030276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1080030281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4128,7 +3985,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -4282,7 +4139,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 0}
@@ -4695,7 +4552,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 0}
@@ -5023,7 +4880,7 @@ GameObject:
   - component: {fileID: 1361721977}
   - component: {fileID: 1361721976}
   m_Layer: 5
-  m_Name: Canvas Normal
+  m_Name: CanvasNormal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5137,7 +4994,6 @@ GameObject:
   - component: {fileID: 1383879754}
   - component: {fileID: 1383879753}
   - component: {fileID: 1383879752}
-  - component: {fileID: 1383879751}
   - component: {fileID: 1383879750}
   m_Layer: 9
   m_Name: ObjectMask11
@@ -5175,18 +5031,6 @@ MonoBehaviour:
   objectNumber: 10
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &1383879751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383879748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1383879752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5203,7 +5047,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -5405,7 +5249,6 @@ GameObject:
   - component: {fileID: 1460796496}
   - component: {fileID: 1460796495}
   - component: {fileID: 1460796494}
-  - component: {fileID: 1460796493}
   - component: {fileID: 1460796492}
   m_Layer: 9
   m_Name: ObjectMask08
@@ -5443,18 +5286,6 @@ MonoBehaviour:
   objectNumber: 7
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &1460796493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460796490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1460796494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5471,7 +5302,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -5676,7 +5507,6 @@ GameObject:
   - component: {fileID: 1535045668}
   - component: {fileID: 1535045670}
   - component: {fileID: 1535045669}
-  - component: {fileID: 1535045672}
   - component: {fileID: 1535045671}
   m_Layer: 9
   m_Name: ObjectMask05
@@ -5765,7 +5595,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -5821,18 +5651,6 @@ MonoBehaviour:
   objectNumber: 4
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &1535045672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1535045666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1590780717
 GameObject:
   m_ObjectHideFlags: 0
@@ -5965,7 +5783,6 @@ GameObject:
   - component: {fileID: 1678413526}
   - component: {fileID: 1678413528}
   - component: {fileID: 1678413527}
-  - component: {fileID: 1678413530}
   - component: {fileID: 1678413529}
   m_Layer: 9
   m_Name: ObjectMask02
@@ -6054,7 +5871,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -6106,18 +5923,6 @@ MonoBehaviour:
   objectNumber: 1
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &1678413530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678413524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1734427868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,7 +6024,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 0}
@@ -6424,7 +6229,6 @@ GameObject:
   - component: {fileID: 1939616840}
   - component: {fileID: 1939616842}
   - component: {fileID: 1939616841}
-  - component: {fileID: 1939616844}
   - component: {fileID: 1939616843}
   m_Layer: 9
   m_Name: merge^
@@ -6513,7 +6317,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 0}
@@ -6570,18 +6374,6 @@ MonoBehaviour:
   objectNumber: 0
   CameraOffset: {x: 0, y: 0}
   zoomSize: 0
---- !u!114 &1939616844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939616838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1952083027
 GameObject:
   m_ObjectHideFlags: 0
@@ -7052,7 +6844,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: 0, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 0}
@@ -7234,7 +7026,6 @@ GameObject:
   - component: {fileID: 2114398596}
   - component: {fileID: 2114398598}
   - component: {fileID: 2114398597}
-  - component: {fileID: 2114398600}
   - component: {fileID: 2114398599}
   m_Layer: 9
   m_Name: ObjectMask07
@@ -7323,7 +7114,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  skala: {x: 0, y: 0, z: 0}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -7377,18 +7168,6 @@ MonoBehaviour:
   objectNumber: 6
   CameraOffset: {x: 50, y: 0}
   zoomSize: 140
---- !u!114 &2114398600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114398594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0ee641cebdbb464198c7af81184ea90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2125277753
 GameObject:
   m_ObjectHideFlags: 0

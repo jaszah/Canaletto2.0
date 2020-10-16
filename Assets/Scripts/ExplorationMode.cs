@@ -10,7 +10,7 @@ public class ExplorationMode : MonoBehaviour
     public bool isClickable;
     public bool maskActive;
     public GameObject modalWindow;
-    public Vector3 skala;
+    public Vector3 modalOffsetVector;
     public static bool isDoubleClick;
     public static Transform trans;
     public Camera cam;
@@ -40,13 +40,11 @@ public class ExplorationMode : MonoBehaviour
         //Double click check
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("normal");
             timeSinceLastClick = Time.time - lastClickTime;
 
             if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
             {
                 isDoubleClick = true;
-                Debug.Log("double");
             }
 
             lastClickTime = Time.time;
@@ -64,26 +62,30 @@ public class ExplorationMode : MonoBehaviour
             else if (!maskActive)
             {
                 Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
+                ModalManager modalMan = GameObject.Find("CanvasNormal").GetComponent<ModalManager>();
 
-                headerKey = "explo" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();//jest
+                headerKey = "explo" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
                 descKey = "explo" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();
 
                 MPanZoom.isOn = false;
                 maskActive = true;
-                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;//niepotrzebne
-                this.gameObject.tag = "ActiveObject";//jest
-                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");//jest
+                this.gameObject.GetComponent<SpriteMask>().frontSortingOrder = 1;
+                this.gameObject.tag = "ActiveObject";
+                GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
                 trans = this.transform;
 
                 ProCamera2D.Instance.AddCameraTarget(trans);
                 ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.x = objProp.CameraOffset.x;
+
+                modalWindow.transform.localPosition = modalOffsetVector;
 
                 previousSize = Camera.main.orthographicSize;
                 Debug.Log(previousSize);
                 buttons.previousSize = Camera.main.orthographicSize;
 
                 goNumber = this.gameObject.GetComponent<ObjectProperties>().objectNumber;
-                this.gameObject.GetComponent<ModalMessages>().GetNewMessage(headerKey, descKey);//to prob można skrócić do ModalManagera, zmaiast messages -> manager
+                modalMan.ShowModal(headerKey, descKey);
+                modalMan.body.transform.localPosition = new Vector3(-253, 0, 0);
                 OpenModal();
                 LeanOut();
 
@@ -94,9 +96,6 @@ public class ExplorationMode : MonoBehaviour
 
                 helpButton.SetActive(false);
                 blend.SetActive(true);
-
-                Debug.Log(headerKey);
-                Debug.Log(descKey);
             }
         }
     }
@@ -136,7 +135,6 @@ public class ExplorationMode : MonoBehaviour
 
     public void LeanIn()
     {
-        Debug.Log(previousSize);
         LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, .5f).setOnUpdate((float flt) => {
             cam.orthographicSize = flt;
         });

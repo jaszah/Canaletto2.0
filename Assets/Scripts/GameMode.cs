@@ -6,6 +6,7 @@ public class GameMode : MonoBehaviour
     public Camera cam;
     public GameObject modalWindow;
     public Material material;
+    public Vector3 modalOffsetVector;
     public bool isClickable = true;
     public bool modalActive = false;
     public float previousSize;
@@ -31,13 +32,11 @@ public class GameMode : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("normal");
             timeSinceLastClick = Time.time - lastClickTime;
 
             if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
             {
                 isDoubleClick = true;
-                Debug.Log("double");
             }
 
             lastClickTime = Time.time;
@@ -70,11 +69,9 @@ public class GameMode : MonoBehaviour
             else
             {
                 Buttons buttons = GameObject.Find("EventSystem").GetComponent<Buttons>();
+                ModalManager modalMan = GameObject.Find("CanvasNormal").GetComponent<ModalManager>();
 
                 this.GetComponent<SpriteRenderer>().material = material;
-
-                headerKey = "game" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
-                descKey = "game" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();
 
                 this.gameObject.tag = "ActiveObject";
                 GameObject[] objectsArray = GameObject.FindGameObjectsWithTag("ObjectToFind");
@@ -91,8 +88,12 @@ public class GameMode : MonoBehaviour
 
                 ProCamera2D.Instance.AddCameraTarget(trans);
                 ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.x = objProp.CameraOffset.x;
+                modalWindow.transform.localPosition = modalOffsetVector;
 
-                this.gameObject.GetComponent<ModalMessages>().GetNewMessage(headerKey, descKey);
+                headerKey = "game" + sceneNumber.ToString() + "_header" + objProp.objectNumber.ToString();
+                descKey = "game" + sceneNumber.ToString() + "_desc" + objProp.objectNumber.ToString();
+                modalMan.ShowModal(headerKey, descKey);
+                modalMan.body.transform.localPosition = new Vector3(-253, 0, 0);
                 OpenModal();
                 LeanOut();
 
@@ -116,7 +117,6 @@ public class GameMode : MonoBehaviour
 
     public void LeanIn()
     {
-        Debug.Log(previousSize);
         LeanTween.value(cam.gameObject, cam.orthographicSize, previousSize, .5f).setOnUpdate((float flt) => {
             cam.orthographicSize = flt;
         });
