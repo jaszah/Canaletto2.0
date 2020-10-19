@@ -1,19 +1,26 @@
 ﻿using Com.LuisPedroFonseca.ProCamera2D;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMode : MonoBehaviour
 {
     public Camera cam;
     public GameObject modalWindow;
+    public GameObject syrenka1;
+    public GameObject syrenka2;
+    public GameObject syrenka3;
     public Material material;
     public Vector3 modalOffsetVector;
     public bool isClickable = true;
     public bool modalActive = false;
     public float previousSize;
+    public int lostHearts = 0;
 
     public static Transform trans;
     public static int sceneNumber;
     public static bool isDoubleClick = false;
+    public static bool winOpened = false;
+
 
     private static float DOUBLE_CLICK_TIME = .2f;
 
@@ -37,7 +44,7 @@ public class GameMode : MonoBehaviour
             if (timeSinceLastClick <= DOUBLE_CLICK_TIME)
             {
                 isDoubleClick = true;
-                Debug.Log("dobule od gamemode");
+                //Debug.Log("dobule od gamemode");
             }
 
             lastClickTime = Time.time;
@@ -45,7 +52,9 @@ public class GameMode : MonoBehaviour
 
         if(isClickable && isDoubleClick)
         {
-            ClickChecker.openWinStarted = true;//a tutaj gdzieś trzeba sprawdzać tam gdzies na dole czy sie cos otwierać ma i jesli tak i jeśli zmienna z clickera jest true to trzeba uruchomić funkcje tutaj napisaną
+            //ClickChecker.openWinStarted = true;//a tutaj gdzieś trzeba sprawdzać tam gdzies na dole czy sie cos otwierać ma i jesli tak i jeśli zmienna z clickera jest true to trzeba uruchomić funkcje tutaj napisaną
+            //Debug.Log(ClickChecker.openWinStarted);
+            winOpened = true;
 
             if (modalActive)
             {
@@ -65,7 +74,7 @@ public class GameMode : MonoBehaviour
 
                 modalWindow.SetActive(false);
 
-                ClickChecker.openWinStarted = false;
+                //ClickChecker.openWinStarted = false;
                 MPanZoom.isOn = true;
                 modalActive = false;
                 isDoubleClick = false;
@@ -105,6 +114,48 @@ public class GameMode : MonoBehaviour
                 modalActive = true;
             }
         }
+    }
+
+    private void Update()
+    {
+        //Debug.Log("clicked z gamemode: " + ClickChecker.clicked);
+        //Debug.Log("winopened: " + winOpened);
+        if (ClickChecker.clicked && !winOpened)
+        {
+            //Debug.Log(openWinStarted);
+            if (lostHearts < 3)
+            {
+                switch (lostHearts)
+                {
+                    case 0:
+                        syrenka1.GetComponent<Animator>().SetBool("IsOn", false);
+                        Destroy(syrenka1, 2.5f);
+                        lostHearts++;
+                        //Debug.Log(openWinStarted);
+                        //openWinStarted = false;
+                        break;
+                    case 1:
+                        syrenka2.GetComponent<Animator>().SetBool("IsOn", false);
+                        Destroy(syrenka2, 2.5f);
+                        lostHearts++;
+                        //openWinStarted = false;
+                        break;
+                    case 2:
+                        syrenka3.GetComponent<Animator>().SetBool("IsOn", false);
+                        Destroy(syrenka3, 2.5f);
+                        lostHearts++;
+                        //openWinStarted = false;
+                        break;
+                }
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+
+        winOpened = false;
+        ClickChecker.clicked = false;
     }
 
     private void OpenModal()

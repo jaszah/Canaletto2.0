@@ -383,11 +383,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: -350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &48505364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,11 +1621,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: -350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &375572688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,11 +1787,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &544514669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3825,11 +3837,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1137491110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,11 +4005,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1148989643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4154,11 +4174,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1185938545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4684,11 +4708,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1264340298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4930,11 +4958,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1301802491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5384,11 +5416,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: -350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1399811678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6046,11 +6082,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1686643135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6211,11 +6251,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: 350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1755743642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6893,11 +6937,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1952083029}
   modalWindow: {fileID: 877764823}
+  syrenka1: {fileID: 1771832465}
+  syrenka2: {fileID: 1559738105}
+  syrenka3: {fileID: 114809273}
   material: {fileID: 2100000, guid: 644ea86f2b1bffe4a9052a783ab13bc1, type: 2}
   modalOffsetVector: {x: -350, y: 0, z: 0}
   isClickable: 1
   modalActive: 0
   previousSize: 0
+  lostHearts: 0
 --- !u!114 &1984031443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7225,7 +7273,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f928b6ba889682748b71552e76875400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  syrenka1: {fileID: 1771832465}
-  syrenka2: {fileID: 1559738105}
-  syrenka3: {fileID: 114809273}
-  lostHearts: 0

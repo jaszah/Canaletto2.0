@@ -117,7 +117,7 @@ public class Buttons : MonoBehaviour
         });
 
         GameObject.Find("ModalWindow").SetActive(false);
-        ClickChecker.openWinStarted = false;
+        //ClickChecker.openWinStarted = false;
 
         MPanZoom.isOn = true;
         GameMode.isDoubleClick = false;
