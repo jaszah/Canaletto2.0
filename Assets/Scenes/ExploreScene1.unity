@@ -843,8 +843,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 14
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 70, y: 0}
+  zoomSize: 80
 --- !u!1 &229782885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,8 +1096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 11
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: -80, y: 0}
+  zoomSize: 80
 --- !u!1 &337885755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,8 +1525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 15
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 70, y: 0}
+  zoomSize: 80
 --- !u!1 &484322510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,8 +1679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 12
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 60, y: 0}
+  zoomSize: 80
 --- !u!1 &530314065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,8 +1836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 2
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: -130, y: 50}
+  zoomSize: 160
 --- !u!1 &544757604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,8 +2942,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 13
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 70, y: 0}
+  zoomSize: 80
 --- !u!1 &799887166
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,8 +3096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 3
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: -80, y: 0}
+  zoomSize: 90
 --- !u!1 &817333845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,7 +3308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 9
-  CameraOffset: {x: 50, y: 0}
+  CameraOffset: {x: 130, y: 10}
   zoomSize: 140
 --- !u!1 &877081033
 GameObject:
@@ -3461,8 +3461,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 8
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 80, y: 0}
+  zoomSize: 100
 --- !u!1 &969532036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,8 +3638,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011259579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.069996, y: -96.26999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 84.25, y: -96.26999, z: 0}
+  m_LocalScale: {x: 0.48750332, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 817333846}
   m_RootOrder: 6
@@ -3740,15 +3740,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 45.392353, y: 6.7832565}
-      - {x: 60.260746, y: 22.650185}
-      - {x: 51.41855, y: 36.465874}
-      - {x: 25.262188, y: 33.232983}
-      - {x: 3.6359253, y: 6.4234467}
-      - {x: 4.822132, y: -21.190681}
-      - {x: 10.964481, y: -21.373878}
-      - {x: 24.266457, y: -12.389481}
-      - {x: 45.059525, y: -15.251472}
+    - - {x: 22.698088, y: 6.7832565}
+      - {x: 55.721905, y: 20.23632}
+      - {x: 36.97674, y: 33.85086}
+      - {x: -4.0340347, y: 28.204113}
+      - {x: -57.432236, y: 6.6245956}
+      - {x: -55.833416, y: -21.592995}
+      - {x: -40.613365, y: -21.172722}
+      - {x: -21.122047, y: -13.194092}
+      - {x: 23.60312, y: -14.245697}
 --- !u!114 &1011259584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3762,8 +3762,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 5
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: -80, y: 0}
+  zoomSize: 80
 --- !u!1 &1059413975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,8 +3917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 0
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 170, y: 0}
+  zoomSize: 200
 --- !u!331 &1080030279
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -4992,9 +4992,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1383879749}
   - component: {fileID: 1383879754}
-  - component: {fileID: 1383879753}
   - component: {fileID: 1383879752}
   - component: {fileID: 1383879750}
+  - component: {fileID: 1383879751}
   m_Layer: 9
   m_Name: ObjectMask11
   m_TagString: ObjectToFind
@@ -5010,8 +5010,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383879748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 356.8, y: -26.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -124.4, y: -191.66, z: 0}
+  m_LocalScale: {x: 0.14619923, y: 0.19658598, z: 0.13847221}
   m_Children: []
   m_Father: {fileID: 817333846}
   m_RootOrder: 11
@@ -5029,30 +5029,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 10
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
---- !u!114 &1383879752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383879748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00e85ccf26f99d9468b9495a9e3debf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blend: {fileID: 50612593}
-  isClickable: 0
-  maskActive: 0
-  modalWindow: {fileID: 414659921}
-  modalOffsetVector: {x: -350, y: 0, z: 0}
-  cam: {fileID: 1952083029}
-  smoothSize: 0
-  helpButton: {fileID: 1749803508}
-  previousSize: 0
---- !u!60 &1383879753
+  CameraOffset: {x: -80, y: 0}
+  zoomSize: 80
+--- !u!60 &1383879751
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5077,10 +5056,33 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -472.41504, y: -144.73888}
-      - {x: -488.83783, y: -139.64381}
-      - {x: -489.39355, y: -191.92863}
-      - {x: -472.1274, y: -191.13182}
+    - - {x: 70.99232, y: -0.40766907}
+      - {x: 46.096794, y: 108.23019}
+      - {x: -4.7942047, y: 109.96417}
+      - {x: -72.62506, y: 35.316776}
+      - {x: -51.014305, y: -134.19615}
+      - {x: 62.147156, y: -131.70135}
+--- !u!114 &1383879752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383879748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e85ccf26f99d9468b9495a9e3debf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blend: {fileID: 50612593}
+  isClickable: 0
+  maskActive: 0
+  modalWindow: {fileID: 414659921}
+  modalOffsetVector: {x: -350, y: 0, z: 0}
+  cam: {fileID: 1952083029}
+  smoothSize: 0
+  helpButton: {fileID: 1749803508}
+  previousSize: 0
 --- !u!331 &1383879754
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -5265,8 +5267,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460796490}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.069996, y: -96.26999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 24.11, y: -113.57, z: 0}
+  m_LocalScale: {x: 0.5547685, y: 0.5631484, z: 1}
   m_Children: []
   m_Father: {fileID: 817333846}
   m_RootOrder: 8
@@ -5284,8 +5286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 7
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: 70, y: 0}
+  zoomSize: 80
 --- !u!114 &1460796494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5302,7 +5304,7 @@ MonoBehaviour:
   isClickable: 0
   maskActive: 0
   modalWindow: {fileID: 414659921}
-  modalOffsetVector: {x: -350, y: 0, z: 0}
+  modalOffsetVector: {x: 350, y: 0, z: 0}
   cam: {fileID: 1952083029}
   smoothSize: 0
   helpButton: {fileID: 1749803508}
@@ -5332,13 +5334,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.09038925, y: -36.27247}
-      - {x: 5.0775833, y: -19.777077}
-      - {x: 5.242943, y: 5.10141}
-      - {x: -25.890976, y: 6.1112137}
-      - {x: -28.33273, y: -11.350407}
-      - {x: -62.082108, y: -11.789978}
-      - {x: -61.34199, y: -34.3656}
+    - - {x: 53.028908, y: -31.986095}
+      - {x: 52.21461, y: -8.346757}
+      - {x: 61.082207, y: 37.249153}
+      - {x: 23.059029, y: 38.616146}
+      - {x: -1.5008745, y: 9.367034}
+      - {x: -52.65469, y: 4.9983006}
+      - {x: -54.452732, y: -31.508057}
 --- !u!331 &1460796496
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -5649,7 +5651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 4
-  CameraOffset: {x: 50, y: 0}
+  CameraOffset: {x: -110, y: 0}
   zoomSize: 140
 --- !u!1 &1590780717
 GameObject:
@@ -5921,7 +5923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 1
-  CameraOffset: {x: 50, y: 0}
+  CameraOffset: {x: 150, y: 0}
   zoomSize: 140
 --- !u!1 &1734427868
 GameObject:
@@ -7166,8 +7168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectNumber: 6
-  CameraOffset: {x: 50, y: 0}
-  zoomSize: 140
+  CameraOffset: {x: -70, y: 0}
+  zoomSize: 90
 --- !u!1 &2125277753
 GameObject:
   m_ObjectHideFlags: 0

@@ -76,6 +76,7 @@ public class ExplorationMode : MonoBehaviour
 
                 ProCamera2D.Instance.AddCameraTarget(trans);
                 ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.x = objProp.CameraOffset.x;
+                ProCamera2D.Instance.GetCameraTarget(trans).TargetOffset.y = objProp.CameraOffset.y;
 
                 modalWindow.transform.localPosition = modalOffsetVector;
 
