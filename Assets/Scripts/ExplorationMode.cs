@@ -96,6 +96,7 @@ public class ExplorationMode : MonoBehaviour
 
                 helpButton.SetActive(false);
                 blend.SetActive(true);
+                isDoubleClick = false;
             }
         }
     }

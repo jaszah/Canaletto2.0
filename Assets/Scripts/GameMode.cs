@@ -112,6 +112,7 @@ public class GameMode : MonoBehaviour
 
                 MPanZoom.isOn = false;
                 modalActive = true;
+                isDoubleClick = false;
             }
         }
     }
